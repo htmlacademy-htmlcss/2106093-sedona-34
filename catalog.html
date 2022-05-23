@@ -33,7 +33,7 @@
     <main class="main-catalog">
       <section class="filter-content">
         <!--Можно было обойтись и без хедера и навигации, возможно перебор, может это просто оформление, а не ссылки?-->
-        <header class="catalog-header"></header>
+        <header class="catalog-header">
           <h1>Гостиницы Седоны</h1>
           <nav class="catalog-navigation">
             <ul class="catalog-navigation-list">
@@ -47,43 +47,43 @@
           </nav>
         </header>
         <ul class="filter-list">
-          <h2>Инфраструктура</h2>
+          <h2>Инфраструктура</h2> <!--Проверил на валидаторе, ругается так делать нельзя? вставлять в список без <li>? -->
           <li class="filter-item">
-            <label for="control">
-              <input class="control-input" type="checkbox" name="swimming-pool" checked>
+            <label for="swimming_pool">
+              <input class="control-input" type="checkbox" name="swimming-pool" id="swimming_pool" checked>
               Бассейн
             </label>
           </li>
           <li class="filter-item">
-            <label for="control">
-              <input class="control-input" type="checkbox" name="parking" checked>
+            <label for="parking">
+              <input class="control-input" type="checkbox" name="parking" id="parking" checked>
               Парковка
             </label>
           </li>
           <li class="filter-item">
-            <label for="control">
-                <input class="control-input" type="checkbox" name="wi-fi">
+            <label for="wi_fi">
+                <input class="control-input" type="checkbox" name="wi-fi" id="wi_fi">
                 Wi-Fi
               </label>
           </li>
         </ul>
         <ul class="filter-list">
-          <h2>Тип Жилья</h2>
+          <h2>Тип Жилья</h2> <!--Проверил на валидаторе, ругается так делать нельзя? вставлять в список без <li>? -->
           <li class="filter-item">
-            <label for="control">
-              <input class="control-input" type="radio" name="hotel" checked>
+            <label for="hotel">
+              <input class="control-input" type="radio" name="hotel" id="hotel" checked>
               Гостиница
             </label>
           </li>
           <li class="filter-item">
-            <label for="control">
-              <input class="control-input" type="radio" name="motel">
+            <label for="motel">
+              <input class="control-input" type="radio" name="motel" id="motel">
               Мотель
             </label>
           </li>
           <li class="filter-item">
-            <label for="control">
-              <input class="control-input" type="radio" name="appartments">
+            <label for="appartments">
+              <input class="control-input" type="radio" name="appartments" id="appartments">
               Аппартаменты
             </label>
           </li>
@@ -107,7 +107,7 @@
             <option value="expensive">Сначала дорогие</option>
           </select>
         </div>
-        <div class="view-container"></div>
+        <div class="view-container">
           <a href="#" class="view-button current-view-button view-list"><span class="visually-hidden">Показать списоком</span></a>
           <a class="view-button view-cards" href="#"><span class="visually-hidden">Показать карточками</span></a>
           <a class="view-button view-slides" href="#"><span class="visually-hidden">Показать слайдами</span></a>
@@ -210,7 +210,7 @@
       <section class="contacts">
         <h4 class="visually-hidden">Связь с нами</h4>
         <ul class="social-meadia">
-          <h5 class="visually-hidden">Social media</h5>
+          <h5 class="visually-hidden">Social media</h5> <!--Проверил на валидаторе, ругается так делать нельзя? вставлять в список без <li>? -->
           <li>
             <a class="social-item" href="https://vk.com/htmlacademy"><span class="visually-hidden">Вконтакте</span></a>
           </li>
