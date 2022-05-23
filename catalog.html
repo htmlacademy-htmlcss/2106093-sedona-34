@@ -32,6 +32,7 @@
     </header>
     <main class="main-catalog">
       <section class="filter-content">
+        <!--Можно было обойтись и без хедера и навигации, возможно перебор, может это просто оформление, а не ссылки?-->
         <header class="catalog-header"></header>
           <h1>Гостиницы Седоны</h1>
           <nav class="catalog-navigation">
@@ -92,37 +93,37 @@
             <div class="price-controls">
               <label class="min-price"><input type="text" name="min-price" value="0" placeholder="от"></label>
               <label class="max-price"><input type="text" name="max-price" value="9000" placeholder="до"></label>
-                <!-- Разобраться с placeholder, текст "от" "до" не должен пропадать -->
+                <!--Заготовка!!! Разобраться с placeholder, текст "от" "до" не должен пропадать -->
             </div>
             <button class="button button-apply" type="submit">Применить</button>
             <button class="button button-resset" type="submit">Сбросить</button>
           </div>
       </section>
       <section>
-        <h2 class="hotels-founded">НАЙДЕНО ГОСТИНИЦ 38</h2> <!-- Нужно ли менять число 38, на активное? -->
+        <h2 class="hotels-founded">НАЙДЕНО ГОСТИНИЦ 38</h2> <!-- Нужно ли менять число 38, на интерактивное? -->
         <div class="select-control">
           <select class="select-control" aria-label="Сортировка">
             <option value="cheap">Сначала дешёвые</option>
             <option value="expensive">Сначала дорогие</option>
           </select>
         </div>
-        <div class="view-control"></div>
+        <div class="view-container"></div>
           <a href="#" class="view-button current-view-button view-list"><span class="visually-hidden">Показать списоком</span></a>
           <a class="view-button view-cards" href="#"><span class="visually-hidden">Показать карточками</span></a>
           <a class="view-button view-slides" href="#"><span class="visually-hidden">Показать слайдами</span></a>
         </div>
-        <ul class="hotels">
+        <ul class="hotels-list">
           <li class="hotel-card-item">
             <a class="hotel-card-link" href="#">
               <img class="hotel-card-image" src="" alt="">
               <h3 class="hotel-card-title">Amara Resort & Spa</h3>
             </a>
-            <p>Гостиница</p>
-            <p>от 4000 ₽</p>
+            <span>Гостиница</span>
+            <span>от 4000 ₽</span>
             <a class="hotel-card-button button" href="#">ПОДРОБНЕЕ</a>
             <button class="button button-favorites" type="submit">В ИЗБРАННОЕ</button>
             <div class="hotel-rating">
-              <img class="hotel-card-stars" src="" alt="Количество звезд">
+              <img class="hotel-card-stars" src="" alt="Количество звезд"><!--Картинка это качества отеля или интерактивный оценка клиентов?-->
               <span class="rating-text">РЕЙТИНГ: 8,5</span>
             </div>
           </li>
@@ -131,8 +132,8 @@
               <img class="hotel-card-image" src="" alt="">
               <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
             </a>
-            <p>Гостиница</p>
-            <p>от 5000 ₽</p>
+            <span>Гостиница</span>
+            <span>от 5000 ₽</span>
             <a class="hotel-card-button button" href="#">ПОДРОБНЕЕ</a>
             <button class="button button-favorites" type="submit">В ИЗБРАННОЕ</button>
             <div class="hotel-rating">
@@ -145,8 +146,8 @@
               <img class="hotel-card-image" src="" alt="">
               <h3 class="hotel-card-title">Desert Quail Inn</h3>
             </a>
-            <p>Гостиница</p>
-            <p>от 2500 ₽</p>
+            <span>Гостиница</span>
+            <span>от 2500 ₽</span>
             <a class="hotel-card-button button" href="#">ПОДРОБНЕЕ</a>
             <button class="button button-favorites" type="submit">В ИЗБРАННОЕ</button>
             <div class="hotel-rating">
@@ -159,8 +160,8 @@
               <img class="hotel-card-image" src="" alt="">
               <h3 class="hotel-card-title">GreenTree Inn</h3>
             </a>
-            <p>Гостиница</p>
-            <p>от 1500 ₽</p>
+            <span>Гостиница</span>
+            <span>от 1500 ₽</span>
             <a class="hotel-card-button button" href="#">ПОДРОБНЕЕ</a>
             <button class="button button-favorites" type="submit">В ИЗБРАННОЕ</button>
             <div class="hotel-rating">
@@ -191,12 +192,12 @@
         </ul>
         <div class="hotels-quantity">
           <p>Гостиниц на странице</p>
-          <input type="number" value="4"><!-- Набросок, пока не понятно -->
+          <input type="number" value="4"><!-- Заготовка, непонятно это переключатель меняет страницу или открывает новую -->
         </div>
       </section>
     </main>
     <footer class="footer">
-      <section class="catalog subscribe-form">
+      <section class="catalog subscribe-form"><!--Добавлен дополнительный класс-->
         <h3>ПОДПИШИТЕСЬ НА РАССЫЛКУ</h3>
         <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="email-form" action="https://echo.htmlacademy.ru/">
@@ -205,28 +206,28 @@
           </label>
             <button class="subscrive-button" type="submit">Подписаться</button>
         </form>
-        <section class="contacts">
-          <h4 class="visually-hidden">Связь с нами</h4>
-            <ul class="social-meadia">
-              <h5 class="visually-hidden">Social media</h5>
-              <li>
-                <a class="social-item" href="https://vk.com/htmlacademy"><span class="visually-hidden">Вконтакте</span></a>
-              </li>
-              <li>
-                <a class="social-item" href="https://t.me/htmlacademy "><span class="visually-hidden">Telegram</span></a>
-              </li>
-              <li>
-                <a class="social-item" href="https://www.youtube.com/user/htmlacademyru"><span class="visually-hidden">YouTube</span></a>
-              </li>
-            </ul>
-            <div class="phone">
-              <a href="tel:78128121212">+7 (812) 812-12-12</a>
-            </div>
-            <div class="authors">
-              <a href="https://htmlacademy.ru/"><img src="" alt="https://htmlacademy.ru/"></a>
-            </div>
         </section>
-
-      </footer>
+      <section class="contacts">
+        <h4 class="visually-hidden">Связь с нами</h4>
+        <ul class="social-meadia">
+          <h5 class="visually-hidden">Social media</h5>
+          <li>
+            <a class="social-item" href="https://vk.com/htmlacademy"><span class="visually-hidden">Вконтакте</span></a>
+          </li>
+          <li>
+            <a class="social-item" href="https://t.me/htmlacademy "><span class="visually-hidden">Telegram</span></a>
+          </li>
+          <li>
+            <a class="social-item" href="https://www.youtube.com/user/htmlacademyru"><span class="visually-hidden">YouTube</span></a>
+          </li>
+        </ul>
+        <div class="phone">
+          <a href="tel:78128121212">+7 (812) 812-12-12</a>
+        </div>
+        <div class="authors">
+          <a href="https://htmlacademy.ru/"><img src="" alt="https://htmlacademy.ru/"></a>
+        </div>
+      </section>
+    </footer>
   </body>
 </html>
