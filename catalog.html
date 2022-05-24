@@ -46,50 +46,54 @@
             </ul>
           </nav>
         </header>
-        <ul class="filter-list">
-          <h2>Инфраструктура</h2> <!--Проверил на валидаторе, ругается так делать нельзя? вставлять в список без <li>? -->
-          <li class="filter-item">
-            <label for="swimming_pool">
-              <input class="control-input" type="checkbox" name="swimming-pool" id="swimming_pool" checked>
-              Бассейн
-            </label>
-          </li>
-          <li class="filter-item">
-            <label for="parking">
-              <input class="control-input" type="checkbox" name="parking" id="parking" checked>
-              Парковка
-            </label>
-          </li>
-          <li class="filter-item">
-            <label for="wi_fi">
+        <div>
+          <h2>Инфраструктура</h2> <!-- Сомневаюсь нужен ли тут заголовок -->
+          <ul class="filter-list">
+            <li class="filter-item">
+              <label for="swimming_pool">
+                <input class="control-input" type="checkbox" name="swimming-pool" id="swimming_pool" checked>
+                Бассейн
+              </label>
+            </li>
+            <li class="filter-item">
+              <label for="parking">
+                <input class="control-input" type="checkbox" name="parking" id="parking" checked>
+                Парковка
+              </label>
+            </li>
+            <li class="filter-item">
+              <label for="wi_fi">
                 <input class="control-input" type="checkbox" name="wi-fi" id="wi_fi">
                 Wi-Fi
               </label>
-          </li>
-        </ul>
-        <ul class="filter-list">
-          <h2>Тип Жилья</h2> <!--Проверил на валидаторе, ругается так делать нельзя? вставлять в список без <li>? -->
-          <li class="filter-item">
-            <label for="hotel">
-              <input class="control-input" type="radio" name="hotel" id="hotel" checked>
-              Гостиница
-            </label>
-          </li>
-          <li class="filter-item">
-            <label for="motel">
-              <input class="control-input" type="radio" name="motel" id="motel">
-              Мотель
-            </label>
-          </li>
-          <li class="filter-item">
-            <label for="appartments">
-              <input class="control-input" type="radio" name="appartments" id="appartments">
-              Аппартаменты
-            </label>
-          </li>
-        </ul>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h2>Тип Жилья</h2> <!-- Сомневаюсь нужен ли тут заголовок -->
+          <ul class="filter-list">
+            <li class="filter-item">
+              <label for="hotel">
+                <input class="control-input" type="radio" name="hotel" id="hotel" checked>
+                Гостиница
+              </label>
+            </li>
+            <li class="filter-item">
+              <label for="motel">
+                <input class="control-input" type="radio" name="motel" id="motel">
+                Мотель
+              </label>
+            </li>
+            <li class="filter-item">
+              <label for="appartments">
+                <input class="control-input" type="radio" name="appartments" id="appartments">
+                Аппартаменты
+              </label>
+            </li>
+          </ul>
+        </div>
         <div class="filter-range">
-          <div class="filter-range-title">Стоимость, ₽:</div>
+          <div class="filter-range-title"><h2>Стоимость, ₽:</h2></div> <!-- Сомневаюсь нужен ли тут заголовок -->
             <div class="price-controls">
               <label class="min-price"><input type="text" name="min-price" value="0" placeholder="от"></label>
               <label class="max-price"><input type="text" name="max-price" value="9000" placeholder="до"></label>
@@ -123,7 +127,7 @@
             <a class="hotel-card-button button" href="#">ПОДРОБНЕЕ</a>
             <button class="button button-favorites" type="submit">В ИЗБРАННОЕ</button>
             <div class="hotel-rating">
-              <img class="hotel-card-stars" src="" alt="Количество звезд"><!--Картинка это качества отеля или интерактивный оценка клиентов?-->
+              <img class="hotel-card-stars" src="" alt="Количество звезд"><!--Картинка звезд это качества отеля или интерактивный оценка клиентов?-->
               <span class="rating-text">РЕЙТИНГ: 8,5</span>
             </div>
           </li>
@@ -210,7 +214,6 @@
       <section class="contacts">
         <h4 class="visually-hidden">Связь с нами</h4>
         <ul class="social-meadia">
-          <h5 class="visually-hidden">Social media</h5> <!--Проверил на валидаторе, ругается так делать нельзя? вставлять в список без <li>? -->
           <li>
             <a class="social-item" href="https://vk.com/htmlacademy"><span class="visually-hidden">Вконтакте</span></a>
           </li>
