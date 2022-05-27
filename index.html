@@ -6,7 +6,9 @@
   </head>
   <body>
     <header class="page-header">
-      <img class="header-logo" src="index.html" alt="Логотип города Седона">
+      <a href="index.html" class="header-logo">
+        <img src="images/content/header/logo.svg" width="139" height="70" alt="Логотип города Седона">
+      </a>
       <nav class="header-navigation">
         <ul class="navigation-list">
           <li class="navigation-item navigation-current-item"><a>Главная</a></li>
@@ -14,19 +16,26 @@
           <li class="navigation-item"><a href="catalog.html">Гостиницы</a></li>
         </ul>
         <ul class="menu-list">
-          <li><a class="search-item" href="#"><span class="visually-hidden">Поиск</span></a></li>
-          <li><a class="favorites-item" href="#"><span class="visually-hidden">Избранное</span></a></li>
+          <li>
+            <a class="search-item" href="#">
+              <img src="images/content/header/search.svg"  width="18" height="18" alt="Поиск">
+              <span class="visually-hidden">Поиск</span>
+            </a>
+          </li>
+          <li>
+            <a class="favorites-item" href="#">
+              <img src="images/content/header/favorites.svg"  width="18" height="17" alt="Избранное">
+              <span class="visually-hidden">Избранное</span>
+            </a>
+          </li>
         </ul>
-        <a class="hotel-search button" href="catalog.html">ХОЧУ СЮДА!</a>
+        <a class="hotel-search button-dark" href="catalog.html">ХОЧУ СЮДА!</a>
       </nav>
     </header>
     <main class="main-index">
       <section class="Greetings">
-        <img src="" alt="WELCOME">
-        <img src="" alt="to the gorgeous">
-        <h1 class="visually-hidden">СЕДОНА</h1>
-        <img src="" alt="">
-        <img src="" alt="Because the Grand Canyon sucks!">
+        <h1 class="visually-hidden">Седона</h1>
+        <img src="images/content/index/welcome.svg" alt="welcome to the gorgeous because the Grand Canyon sucks!" width="458" height="352">
       </section>
       <section class="about-sedona">
         <h2>Седона — небольшой городок в Аризоне,заслуживающий большего!</h2>
@@ -34,80 +43,95 @@
         <!-- В Figma данный блок находится вместе section class="Greetings, возможно стоит перенести"  -->
         <ol class="advantages-list">
           <li class="advantages-item illustration">
-            <h3>НАСТОЯЩИЙ ГОРОДОК</h3>
+            <h3>Настоящий городок</h3>
             <span>-№1-</span> <!-- Не уверен, что такую нумерацию можно сделать с помощью CSS, но так получается двойная нумерация -->
             <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-            <img src="" alt="Фото отеля">
+            <img src="images/content/index/photo-1.jpg " width="800" height="384" alt="Фото отеля">
             <ul class="advantages-city-list">
               <li class="advantages-city-item">
-                <h4>ЖИЛЬЕ</h4>
+                <h4>Жилье</h4>
                 <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
               </li>
               <li class="advantages-city-item">
-                <h4>ЕДА</h4>
+                <h4>Еда</h4>
                 <p>Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
               </li>
               <li class="advantages-city-item">
-                <h4>СУВЕНИРЫ</h4>
+                <h4>Сувениры</h4>
                 <p>Не только китайского, но и настоящего местного производства!</p>
               </li>
             </ul>
           </li>
           <li class="advantages-item illustration">
-            <h3>ТАМ ЕСТЬ МОСТ ДЪЯВОЛА</h3>
+            <h3>Там есть мост дъявола</h3>
             <span>-№2-</span>
             <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
-            <img src="" alt="Фото каньона">
+            <img src="images/content/index/photo-2.jpg" width="800" height="384" alt="Фото каньона">
           </li>
           <li class="advantages-item">
-            <h3>НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
+            <h3>Небольшая площадь</h3>
             <span>-№3-</span>
             <p>Все достопримечательности находятся очень близко</p>
           </li>
           <li class="advantages-item">
-            <h3>КРАСИВАЯ ДОРОГА</h3>
+            <h3>Красивая дорога</h3>
             <span>-№4-</span>
             <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
           <li class="advantages-item">
-            <h3>МАЛО ТУРИСТОВ</h3>
+            <h3>Мало туристов</h3>
             <span>-№5-</span>
             <p>Большинство едет в Гранд Каньон и толпится там</p>
           </li>
         </ol>
       </section>
       <section class="interesting">
-        <h2>ЗАИНТЕРЕСОВАЛИСЬ?</h2>
+        <h2>Заинтересовались?</h2>
         <p>Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <a class="hotel-search button" href="#">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
-        <!-- Позже сдесь будет модальное окно -->
+        <a class="hotel-search button-dark" href="#">Поиск гостиницы в Седоне</a>
       </section>
-     </main>
-     <footer class="footer">
-       <section class="index subscribe-form">
-        <h3>ПОДПИШИТЕСЬ НА РАССЫЛКУ</h3>  <!-- Добавил этот блок в подвал, так как рн повторяется и на следующей странице(но без фона) -->
+    </main>
+    <footer class="footer">
+      <section class="form-with-background subscribe-form">
+        <h3>Подпишись на рассылку</h3>
         <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="email-form" action="https://echo.htmlacademy.ru/">
           <label for="user_email">
             <input type="email" name="user-email" id="user_email" placeholder="Ваш e-mail">
-          </label>
-            <button class="subscrive-button" type="submit">Подписаться</button>
+        </label>
+        <button class="subscribe-button button-light" type="submit">Подписаться</button>
         </form>
       </section>
-      <section class="contacts">
+      <div class="contacts">
         <h4 class="visually-hidden">Связь с нами</h4>
         <ul class="social-meadia">
-          <li><a class="social-item" href="https://vk.com/htmlacademy"><span class="visually-hidden">Вконтакте</span></a></li>
-          <li><a class="social-item" href="https://t.me/htmlacademy "><span class="visually-hidden">Telegram</span></a></li>
-          <li><a class="social-item" href="https://www.youtube.com/user/htmlacademyru"><span class="visually-hidden">YouTube</span></a></li>
+          <li>
+            <a class="social-item" href="https://vk.com/htmlacademy">
+              <img src="images/content/footer/vkontakte-icon.svg" width="24" height="14" alt="https://vk.com/htmlacademy">
+              <span class="visually-hidden">Вконтакте</span>
+            </a>
+          </li>
+          <li>
+            <a class="social-item" href="https://t.me/htmlacademy">
+              <img src="images/content/footer/telegram-icon.svg" width="18" height="17" alt="https://t.me/htmlacademy">
+              <span class="visually-hidden">Telegram</span>
+            </a>
+          </li>
+          <li>
+            <a class="social-item" href="https://www.youtube.com/user/htmlacademyru">
+              <img src="images/content/footer/youtube-icon.svg" width="22" height="17" alt="https://www.youtube.com/user/htmlacademyru">
+              <span class="visually-hidden">YouTube</span>
+            </a>
+          </li>
         </ul>
         <div class="phone">
           <a href="tel:78128121212">+7 (812) 812-12-12</a>
         </div>
         <div class="authors">
-          <a href="https://htmlacademy.ru/"><img src="" alt="https://htmlacademy.ru/"></a>
+          <a href="https://htmlacademy.ru/"><img src="images/content/footer/html-academy.svg" alt="https://htmlacademy.ru/"></a>
         </div>
-      </section>
-     </footer>
+      </div>
+    </footer>
+    <!-- Позже сдесь будет модальное окно -->
   </body>
 </html>
