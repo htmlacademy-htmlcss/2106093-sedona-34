@@ -1,0 +1,266 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  background-color: #FFFFFF;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  object-fit: contain;
+}
+
+/* Header */
+
+.page-header {
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.header-navigation {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.quantity-favorites {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 13px;
+  text-align: center;
+}
+
+/* Buttons */
+
+.button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  align-items: center;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.button-dark {
+  background: #756157;
+}
+
+.button-light {
+  background: #82B3D3;
+}
+
+/* Main */
+
+.greetings {
+  background-color: #a4c9dd;
+  background-image: url("../images/backgrounds/index-background-1.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.main-index {
+  text-align: center;
+}
+
+.main-index h2 {
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.caption-container {
+  width: 620px;
+  height: 72px;
+  margin: auto;
+}
+
+.main-index h3 {
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.five-advantages {
+  font-size: 22px;
+  line-height: 26px;
+  color: #333333;
+}
+
+.side-block {
+  background: rgba(131, 179, 211, 0.12);
+}
+
+.central-block {
+  background: rgba(131, 179, 211, 0.2);
+}
+
+.advantages-item p {
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+}
+
+.interesting p {
+  font-size: 22px;
+  line-height: 26px;
+  color: #333333;
+}
+
+.container-illustration-background {
+  background: #82B3D3;
+  color: #FFFFFF;
+}
+
+.container-illustration-background p {
+  color: #FFFFFF;
+}
+
+/* Footer */
+
+.subscribe-form {
+  text-align: center;
+}
+
+.subscribe-form h3 {
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.subscribe-form p {
+  font-size: 22px;
+  line-height: 26px;
+  color: #333333;
+}
+
+.form-with-background {
+  color: #FFFFFF;
+  background: #82B3D3;
+  background-image: url("../images/backgrounds/background-footer.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.form-with-background p {
+  color: #FFFFFF;
+}
+
+.phone {
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+
+/* Catalog form */
+.filter-content {
+  color: #FFFFFF;
+  background-color: #a4c9dd;
+  background-image: url("../images/backgrounds/background-footer.jpg"); /* Картинку поменять */
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.main-catalog h1 {
+  font-size: 60px;
+  line-height: 78px;
+}
+
+.catalog-navigation-list {
+  font-size: 16px;
+}
+
+.filter-content h2 {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.button-apply {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.button-reset {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color:#FFFFFF;
+  background-color:transparent;
+  border: none;
+}
+
+/* Section hotels-founded */
+
+.hotels-founded {
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.select-control {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.hotels-catalog h3 {
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.rating-text {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.hotel-card-item span {
+  color: #333333;
+}
+
+.rating-text {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+
+.pagination {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+}
+
+.pagination-link-current{
+  background-color: #F2F2F2;
+}
+
+.pagination-link {
+  color: #FFFFFF;
+  background-color: #82B3D3;
+}
+
+.quantity-hotels {
+  font-family: "PT Sans", "Arial", sans-serif;
+  color: #333333;
+}
