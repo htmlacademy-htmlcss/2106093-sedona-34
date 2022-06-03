@@ -136,3 +136,33 @@ img {
 .container-illustration-background p{
   color: #FFFFFF;
 }
+
+/* Footer */
+
+.subscribe-form{
+  text-align: center;
+}
+
+.subscribe-form h3{
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.subscribe-form p{
+  font-size: 22px;
+  line-height: 26px;
+  color: #333333;
+}
+
+.form-with-background{
+  color: #FFFFFF;
+  background: #82B3D3;
+  background-image: url("/images/backgrounds/background-footer.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.form-with-background p{
+  color: #FFFFFF;
+}
