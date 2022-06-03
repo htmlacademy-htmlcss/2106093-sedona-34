@@ -1,4 +1,4 @@
-font-face {
+@font-face {
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
@@ -15,13 +15,13 @@ font-face {
 }
 
 body {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 21px;
   background-color: #FFFFFF;
 }
 
-body a{
+a {
   text-decoration: none;
   color: inherit;
 }
@@ -33,17 +33,17 @@ img {
 
 /* Header */
 
-.page-header{
+.page-header {
   font-weight: 700;
   text-transform: capitalize;
 }
 
-.header-navigation{
+.header-navigation {
   font-size: 20px;
   line-height: 26px;
 }
 
-.quantity-favorites{
+.quantity-favorites {
   font-weight: 400;
   font-size: 10px;
   line-height: 13px;
@@ -52,7 +52,7 @@ img {
 
 /* Buttons */
 
-.button{
+.button {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -63,147 +63,147 @@ img {
   border-radius: 4px;
 }
 
-.button-dark{
+.button-dark {
   background: #756157;
 }
 
-.button-light{
+.button-light {
   background: #82B3D3;
 }
 
 /* Main */
 
-.greetings{
+.greetings {
   background-color: #a4c9dd;
-  background-image: url("/images/backgrounds/index-background-1.jpg");
+  background-image: url("../images/backgrounds/index-background-1.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
 
-.main-index{
+.main-index {
   text-align: center;
 }
 
-.main-index h2{
+.main-index h2 {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
 }
 
-.caption-container{
+.caption-container {
   width: 620px;
   height: 72px;
   margin: auto;
 }
 
-.main-index h3{
+.main-index h3 {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
 }
 
-.five-advantages{
+.five-advantages {
   font-size: 22px;
   line-height: 26px;
   color: #333333;
 }
-/* ЗАДАТЬ ВОПРОС */
-.side-block{
-  background: #83B3D31F;
+
+.side-block {
+  background: rgba(131, 179, 211, 0.12);
 }
 
-.central-block{
-  background: #83B3D333;
+.central-block {
+  background: rgba(131, 179, 211, 0.2);
 }
 
-.advantages-item p{
+.advantages-item p {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
 }
 
-.interesting p{
+.interesting p {
   font-size: 22px;
   line-height: 26px;
   color: #333333;
 }
 
-.container-illustration-background{
+.container-illustration-background {
   background: #82B3D3;
   color: #FFFFFF;
 }
 
-.container-illustration-background p{
+.container-illustration-background p {
   color: #FFFFFF;
 }
 
 /* Footer */
 
-.subscribe-form{
+.subscribe-form {
   text-align: center;
 }
 
-.subscribe-form h3{
+.subscribe-form h3 {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
 }
 
-.subscribe-form p{
+.subscribe-form p {
   font-size: 22px;
   line-height: 26px;
   color: #333333;
 }
 
-.form-with-background{
+.form-with-background {
   color: #FFFFFF;
   background: #82B3D3;
-  background-image: url("/images/backgrounds/background-footer.jpg");
+  background-image: url("../images/backgrounds/background-footer.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
 
-.form-with-background p{
+.form-with-background p {
   color: #FFFFFF;
 }
 
-.phone{
+.phone {
   font-size: 40px;
   line-height: 40px;
   text-align: center;
 }
 
 /* Catalog form */
-.filter-content{
+.filter-content {
   color: #FFFFFF;
   background-color: #a4c9dd;
-  background-image: url("/images/backgrounds/background-footer.jpg"); /* Картинку поменять */
-  background-size: 100% auto;
+  background-image: url("../images/backgrounds/background-footer.jpg"); /* Картинку поменять */
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
-.main-catalog h1{
+.main-catalog h1 {
   font-size: 60px;
   line-height: 78px;
 }
 
-.catalog-navigation-list{
+.catalog-navigation-list {
   font-size: 16px;
 }
 
-.filter-content h2{
+.filter-content h2 {
   font-size: 20px;
   line-height: 26px;
 }
 
-.button-apply{
-  font-family: "PT Sans", sans-serif;
+.button-apply {
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
 }
 
-.button-reset{
-  font-family: "PT Sans", sans-serif;
+.button-reset {
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
   color:#FFFFFF;
@@ -213,39 +213,39 @@ img {
 
 /* Section hotels-founded */
 
-.hotels-founded{
+.hotels-founded {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
 }
 
-.select-control{
-  font-family: "PT Sans", sans-serif;
+.select-control {
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 21px;
 }
 
-.hotels-catalog h3{
+.hotels-catalog h3 {
   font-size: 24px;
   line-height: 28px;
 }
 
-.rating-text{
+.rating-text {
   font-size: 16px;
   line-height: 20px;
 }
 
-.hotel-card-item span{
+.hotel-card-item span {
   color: #333333;
 }
 
-.rating-text{
+.rating-text {
   font-size: 16px;
   line-height: 20px;
 }
 
 
-.pagination{
+.pagination {
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
@@ -255,12 +255,12 @@ img {
   background-color: #F2F2F2;
 }
 
-.pagination-link{
+.pagination-link {
   color: #FFFFFF;
   background-color: #82B3D3;
 }
 
-.quantity-hotels{
-  font-family: "PT Sans", sans-serif;
+.quantity-hotels {
+  font-family: "PT Sans", "Arial", sans-serif;
   color: #333333;
 }
