@@ -50,7 +50,8 @@ img {
   text-align: center;
 }
 
-/* Кнопки */
+/* Buttons */
+
 .button{
   font-weight: 700;
   font-size: 16px;
@@ -70,3 +71,68 @@ img {
   background: #82B3D3;
 }
 
+/* Main */
+
+.greetings{
+  background-color: #a4c9dd;
+  background-image: url("/images/backgrounds/index-background-1.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.main-index{
+  text-align: center;
+}
+
+.main-index h2{
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.caption-container{
+  width: 620px;
+  height: 72px;
+  margin: auto;
+}
+
+.main-index h3{
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.five-advantages{
+  font-size: 22px;
+  line-height: 26px;
+  color: #333333;
+}
+/* ЗАДАТЬ ВОПРОС */
+.side-block{
+  background: #83B3D31F;
+}
+
+.central-block{
+  background: #83B3D333;
+}
+
+.advantages-item p{
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+}
+
+.interesting p{
+  font-size: 22px;
+  line-height: 26px;
+  color: #333333;
+}
+
+.container-illustration-background{
+  background: #82B3D3;
+  color: #FFFFFF;
+}
+
+.container-illustration-background p{
+  color: #FFFFFF;
+}
