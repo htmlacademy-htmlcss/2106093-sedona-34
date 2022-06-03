@@ -20,3 +20,8 @@ body {
   line-height: 21px;
   background-color: #FFFFFF;
 }
+
+img {
+  max-width: 100%;
+  object-fit: contain;
+}
