@@ -166,3 +166,9 @@ img {
 .form-with-background p{
   color: #FFFFFF;
 }
+
+.phone{
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+}
