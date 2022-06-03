@@ -210,3 +210,36 @@ img {
   background-color:transparent;
   border: none;
 }
+
+/* Section hotels-founded */
+
+.hotels-founded{
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.select-control{
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.hotels-catalog h3{
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.rating-text{
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.hotel-card-item span{
+  color: #333333;
+}
+
+.rating-text{
+  font-size: 16px;
+  line-height: 20px;
+}
