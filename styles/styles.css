@@ -21,7 +21,52 @@ body {
   background-color: #FFFFFF;
 }
 
+body a{
+  text-decoration: none;
+  color: inherit;
+}
+
 img {
   max-width: 100%;
   object-fit: contain;
 }
+
+/* Header */
+
+.page-header{
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.header-navigation{
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.quantity-favorites{
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 13px;
+  text-align: center;
+}
+
+/* Кнопки */
+.button{
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  align-items: center;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.button-dark{
+  background: #756157;
+}
+
+.button-light{
+  background: #82B3D3;
+}
+
