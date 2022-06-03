@@ -172,3 +172,41 @@ img {
   line-height: 40px;
   text-align: center;
 }
+
+/* Catalog form */
+.filter-content{
+  color: #FFFFFF;
+  background-color: #a4c9dd;
+  background-image: url("/images/backgrounds/background-footer.jpg"); /* Картинку поменять */
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.main-catalog h1{
+  font-size: 60px;
+  line-height: 78px;
+}
+
+.catalog-navigation-list{
+  font-size: 16px;
+}
+
+.filter-content h2{
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.button-apply{
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.button-reset{
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color:#FFFFFF;
+  background-color:transparent;
+  border: none;
+}
