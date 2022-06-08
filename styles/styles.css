@@ -109,6 +109,11 @@ img {
 
 /* Main */
 
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
 .greetings {
   background-color: #a4c9dd;
   background-image: url("../images/backgrounds/index-background-1.jpg");
