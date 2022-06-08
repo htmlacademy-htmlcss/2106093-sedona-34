@@ -45,13 +45,37 @@ img {
 /* Header */
 
 .page-header {
+  /* Стилизация */
   font-weight: 700;
   text-transform: capitalize;
+  /* Сетка */
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  justify-content: space-between;
 }
 
 .header-navigation {
   font-size: 20px;
   line-height: 26px;
+  /* Сетка */
+  display: flex;
+  width: 891px;
+  margin: 0 auto;
+}
+
+.navigation-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 500px;
+}
+
+.menu-list { /* Возможно лишний класс или создать дополнительный общий */
+  margin: left uato;
+  padding: 0;
+  width: 300px;
+  list-style: none;
 }
 
 .quantity-favorites {
