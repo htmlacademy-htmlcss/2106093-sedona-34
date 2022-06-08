@@ -72,9 +72,10 @@ img {
 }
 
 .menu-list { /* Возможно лишний класс или создать дополнительный общий */
-  margin: left uato;
+  margin: 0;
+  margin-left: auto;
   padding: 0;
-  width: 300px;
+  max-width: 300px;
   list-style: none;
 }
 
