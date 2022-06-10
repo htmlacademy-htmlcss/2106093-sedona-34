@@ -77,6 +77,11 @@ img {
   margin: 0 auto;
 }
 
+.container-logo {
+  width: 240px;
+  text-align: center;
+}
+
 .navigation-list {
   margin: 0;
   padding: 0;
@@ -126,6 +131,7 @@ img {
   width: 1200px;
   margin: 0 auto;
   text-align: center;
+  flex-grow: 1;
 }
 
 .greetings {
@@ -142,11 +148,7 @@ img {
 
 .mask {
   position: relative;
-  bottom: -20px;
-}
-
-.main-container {
-  flex-grow: 1;
+  bottom: -21px;
 }
 
 .main-index h2 {
@@ -283,6 +285,7 @@ img {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  margin: 0;
 }
 
 .subscribe-form p {
