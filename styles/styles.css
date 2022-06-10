@@ -133,6 +133,16 @@ img {
   background-image: url("../images/backgrounds/index-background-1.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
+  height: 485px;
+}
+
+.greetings-image {
+  margin-top: 51px;
+}
+
+.mask {
+  position: relative;
+  bottom: -20px;
 }
 
 .main-container {
