@@ -238,10 +238,30 @@ img {
   color: #333333;
 }
 
+.interesting {
+  height: 417px;
+}
+
+.interesting h2{
+  padding-top: 91px;
+  padding-bottom: 29px;
+  margin: 0;
+}
+
 .interesting p {
   font-size: 22px;
   line-height: 26px;
   color: #333333;
+  margin: 0px;
+  padding-bottom: 76px;
+}
+
+.hotel-search-button {
+  box-sizing:border-box;
+  margin:0;
+  padding: 20px 150px;
+  line-height: 36px;
+  font-size: 20px;
 }
 
 .container-illustration-background {
