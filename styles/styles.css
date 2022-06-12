@@ -149,8 +149,11 @@ img {
 .page-container {
   width: 1200px;
   margin: 0 auto;
-  text-align: center;
   flex-grow: 1;
+}
+
+.main-index {
+  text-align: center;
 }
 
 .greetings {
@@ -336,7 +339,6 @@ img {
 .email-form input{
   width: 600px;
   height: 60px;
-  border: none;
   padding: 0;
 }
 
@@ -395,26 +397,55 @@ img {
 }
 
 /* Catalog form */
-.filter-content {
-  color: #FFFFFF;
+
+.filter-container {
+  width: 1200px;
+  padding: 35px 70px 70px 70px;
   background-color: #a4c9dd;
   background-image: url("../images/backgrounds/background-footer.jpg"); /* Картинку поменять */
   background-size: cover;
   background-repeat: no-repeat;
 }
 
+.filter-content {
+  color: #FFFFFF;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .main-catalog h1 {
   font-size: 60px;
   line-height: 78px;
+  margin: 0;
+  width: 100%;
+}
+
+.catalog-header {
+  width: 100%;
 }
 
 .catalog-navigation-list {
   font-size: 16px;
+  width: 120px;
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  justify-content: space-between;
 }
 
 .filter-content h2 {
   font-size: 20px;
   line-height: 26px;
+}
+
+.filter-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.filter-range {
+  width: 600px;
 }
 
 .button-apply {
