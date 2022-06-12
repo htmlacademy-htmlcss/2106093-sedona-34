@@ -73,8 +73,9 @@ img {
   line-height: 26px;
   /* Сетка */
   display: flex;
-  width: 891px;
-  margin: 0 auto;
+  align-items: center;
+  width: 1200px;
+  justify-content: space-between;
 }
 
 .container-logo {
@@ -83,18 +84,38 @@ img {
 }
 
 .navigation-list {
+  display: flex;
   margin: 0;
   padding: 0;
   list-style: none;
   width: 500px;
 }
 
-.menu-list { /* Возможно лишний класс или создать дополнительный общий */
+.navigation-item {
+  padding: 0 17px;
+}
+
+.menu-list {
   margin: 0;
   margin-left: auto;
   padding: 0;
-  max-width: 300px;
   list-style: none;
+  display: flex;
+  padding-right: 70px;
+  width: 265px;
+}
+
+.search-item{
+  width: 42px;
+}
+
+.favorites-item{
+  width: 42px;
+}
+
+.want-here {
+  margin-left: 20px;
+  padding: 8px 34px;
 }
 
 .quantity-favorites {
