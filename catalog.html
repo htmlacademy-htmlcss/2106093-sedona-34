@@ -114,23 +114,25 @@
           </section>
         </div>
         <section class="hotels-catalog">
-          <h2 class="hotels-founded">Найдено гостиниц <span class="quantity-hotels-founded">38</span></h2>
-          <div class="select-control">
-            <select class="select-control" aria-label="Сортировка">
-              <option value="cheap">Сначала дешёвые</option>
-              <option value="expensive">Сначала дорогие</option>
-            </select>
-          </div>
-          <div class="view-container">
-            <a href="#" class="view-button current-view-button view-list">
-              <span class="visually-hidden">Показать списоком</span>
-            </a>
-            <a class="view-button view-cards" href="#">
-              <span class="visually-hidden">Показать карточками</span>
-            </a>
-            <a class="view-button view-slides" href="#">
-              <span class="visually-hidden">Показать слайдами</span>
-            </a>
+          <div class="hotels-info-container">
+            <h2 class="hotels-founded">Найдено гостиниц: <span class="quantity-hotels-founded">38</span></h2>
+            <div class="select-control">
+              <select class="select-control" aria-label="Сортировка">
+                <option value="cheap">Сначала дешёвые</option>
+                <option value="expensive">Сначала дорогие</option>
+              </select>
+            </div>
+            <div class="view-container">
+              <a href="#" class="view-button current-view-button view-list">
+                <span class="visually-hidden">Показать списоком</span>
+              </a>
+              <a class="view-button view-cards" href="#">
+                <span class="visually-hidden">Показать карточками</span>
+              </a>
+              <a class="view-button view-slides" href="#">
+                <span class="visually-hidden">Показать слайдами</span>
+              </a>
+            </div>
           </div>
           <ul class="hotels-list">
             <li class="hotel-card-item">
@@ -190,33 +192,35 @@
               </div>
             </li>
           </ul>
-          <ul class="pagination">
-            <li class="pagination-item">
-              <a class="pagination-link-current">1</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">2</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">3</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">4</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">...</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">10</a>
-            </li>
-          </ul>
-          <div class="hotels-quantity">
-            <p>Гостиниц на странице</p>
-            <select class="quantity-hotels" aria-label="Количество отелей на странице.">
-              <option value="4">4</option>
-              <option value="8">8</option>
-              <option value="16">16</option>
-            </select>
+          <div class="pagination-container">
+            <ul class="pagination">
+              <li class="pagination-item">
+                <a class="pagination-link-current">1</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">2</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">3</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">4</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">...</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">10</a>
+              </li>
+            </ul>
+            <div class="hotels-quantity-container">
+              <p>Гостиниц на странице</p>
+              <select class="quantity-hotels" aria-label="Количество отелей на странице.">
+                <option value="4">4</option>
+                <option value="8">8</option>
+                <option value="16">16</option>
+              </select>
+            </div>
           </div>
         </section>
       </div>

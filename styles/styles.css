@@ -399,7 +399,7 @@ img {
 /* Catalog form */
 
 .filter-container {
-  width: 1200px;
+  width: 1060px;
   padding: 35px 70px 70px 70px;
   background-color: #a4c9dd;
   background-image: url("../images/backgrounds/background-footer.jpg"); /* Картинку поменять */
@@ -412,6 +412,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  box-sizing: border-box;
 }
 
 .main-catalog h1 {
@@ -465,16 +466,42 @@ img {
 
 /* Section hotels-founded */
 
+.hotels-info-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px 72px 57px 72px;
+  width: 1200px;
+}
+
 .hotels-founded {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  margin: 0;
+  width: 350px;
 }
 
 .select-control {
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 21px;
+  width: 290px;
+}
+
+.view-container {
+  width: 140px;
+}
+
+.hotels-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.hotel-card-item {
+  width: 340px;
 }
 
 .hotels-catalog h3 {
@@ -496,11 +523,21 @@ img {
   line-height: 20px;
 }
 
+.pagination-container {
+  display: flex;
+  flex-direction: row;
+  width: 1200px;
+  justify-content: space-between;
+}
 
 .pagination {
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
+  display: flex;
+  list-style-type: none;
+  width: 500px;
+  justify-content: space-between;
 }
 
 .pagination-link-current{
@@ -512,7 +549,16 @@ img {
   background-color: #82B3D3;
 }
 
+.hotels-quantity-container {
+  display: flex;
+  align-items: center;
+  width: 386px;
+  justify-content: space-between;
+}
+
 .quantity-hotels {
   font-family: "PT Sans", "Arial", sans-serif;
   color: #333333;
+  height: 20px;
 }
+
