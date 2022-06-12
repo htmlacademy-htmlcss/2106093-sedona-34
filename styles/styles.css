@@ -296,8 +296,20 @@ img {
 
 /* Footer */
 
+.footer {
+  margin: 0 auto;
+}
+
+.footer-container {
+  display: flex;
+  flex: wrap;
+  width: 1200px;
+}
+
 .subscribe-form {
   text-align: center;
+  width: 1200px;
+  min-height: 411px;
 }
 
 .subscribe-form h3 {
@@ -307,10 +319,30 @@ img {
   margin: 0;
 }
 
+.subscribe-form h3{
+  margin-top: 94px;
+  margin-bottom: 29px;
+}
+
 .subscribe-form p {
   font-size: 22px;
   line-height: 26px;
   color: #333333;
+  margin-top: 0;
+  margin-bottom: 46px;
+  padding: 0 330px;
+}
+
+.email-form input{
+  width: 600px;
+  height: 60px;
+  border: none;
+  padding: 0;
+}
+
+.subscribe-button {
+  padding: 20px;
+  border: none;
 }
 
 .form-with-background {
