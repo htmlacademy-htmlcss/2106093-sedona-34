@@ -62,10 +62,8 @@ img {
   font-weight: 700;
   text-transform: capitalize;
   /* Сетка */
-  display: flex;
   width: 1200px;
   margin: 0 auto;
-  justify-content: space-between;
 }
 
 .header-navigation {
