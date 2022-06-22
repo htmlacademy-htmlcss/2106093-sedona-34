@@ -95,8 +95,8 @@ img {
   width: 500px;
 }
 
-.navigation-item {
-  padding: 0 17px;
+.navigation-item a{
+  padding: 17px;
 }
 
 .menu-list {
