@@ -195,6 +195,19 @@ img {
   width: 400px;
   padding: 80px 85px;
   box-sizing: border-box;
+  min-height: 383px;
+}
+
+.advantages-item h4 {
+  margin: 102px 0 30px 0;
+}
+
+.advantages-item h3 {
+  margin: 102px 0 30px 0;
+}
+
+.advantages-item p {
+  margin: 30px 0;
 }
 
 .illustration-image{
@@ -207,10 +220,23 @@ img {
   align-items: center;
 }
 
+.container-illustration-background.reverse  {
+  flex-direction: row-reverse;
+}
+
 .item-text {
   width: 400px;
   padding: 0 80px;
   box-sizing: border-box;
+}
+
+.item-text h3 {
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.item-text p {
+  margin: 30px 0;
 }
 
 .advantages-city-list {
