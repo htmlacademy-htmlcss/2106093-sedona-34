@@ -68,7 +68,6 @@ img {
   font-weight: 700;
   text-transform: capitalize;
   /* Сетка */
-  width: 1200px;
   margin: 0 auto;
 }
 
@@ -151,13 +150,6 @@ img {
 }
 
 /* Main */
-
-.page-container {
-  width: 1200px;
-  margin: 0 auto;
-  flex-grow: 1;
-}
-
 .main-index {
   text-align: center;
 }
@@ -183,12 +175,11 @@ img {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  margin: 63px 290px 31px;
 }
 
-.caption-container {
-  width: 620px;
-  height: 72px;
-  margin: auto;
+.five-advantages {
+  margin: 0 273px 90px 273px;
 }
 
 .advantages-list {
@@ -198,17 +189,12 @@ img {
   list-style-type: none;
   padding: 0px;
   margin: 0px;
-  width: 1200px;
 }
 
 .advantages-item {
   width: 400px;
   padding: 80px 85px;
   box-sizing: border-box;
-}
-
-.advantages-item-illustration {
-  width: 1200px;
 }
 
 .illustration-image{
@@ -312,12 +298,10 @@ img {
 .footer-container {
   display: flex;
   flex-wrap: wrap;
-  width: 1200px;
 }
 
 .subscribe-form {
   text-align: center;
-  width: 1200px;
   min-height: 411px;
 }
 
@@ -343,18 +327,12 @@ img {
 }
 
 .email-form input{
-  width: 600px;
-  height: 60px;
-  padding: 0;
+  padding: 400px;
 }
 
 .subscribe-button {
   padding: 20px;
   border: none;
-}
-
-.our-contacts {
-  width: 1200px;
 }
 
 .form-with-background {
