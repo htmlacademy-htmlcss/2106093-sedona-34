@@ -326,12 +326,27 @@ img {
   padding: 0 330px;
 }
 
+.email-form {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  width: 800px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
 .email-form input{
-  padding: 400px;
+  padding: 20px 20px;
+  width: 560px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  border-radius: 10px 0 0 10px;
+  border: none;
 }
 
 .subscribe-button {
-  padding: 20px;
+  padding: 20px 40px;
+  border-radius: 0 10px 10px 0;
   border: none;
 }
 
