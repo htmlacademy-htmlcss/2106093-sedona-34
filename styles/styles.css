@@ -84,18 +84,25 @@ img {
 .container-logo {
   width: 240px;
   text-align: center;
+  margin-bottom: -10px;
+  z-index: 1;
 }
 
 .navigation-list {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style: none;
   width: 500px;
 }
 
+.navigation-item {
+  margin: 10px 7px;
+}
+
 .navigation-item a{
-  padding: 17px;
+  padding: 10px 7px;
 }
 
 .menu-list {
