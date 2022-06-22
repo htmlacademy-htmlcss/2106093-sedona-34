@@ -504,7 +504,6 @@ img {
   justify-content: space-between;
   align-items: center;
   margin: 50px 72px 57px 72px;
-  width: 1200px;
 }
 
 .hotels-founded {
@@ -527,9 +526,11 @@ img {
 }
 
 .hotels-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  margin: 0 73px;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 340px 340px 340px;
+  gap: 18px;
   list-style-type: none;
 }
 
