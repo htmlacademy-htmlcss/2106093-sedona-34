@@ -523,7 +523,11 @@ img {
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 21px;
-  width: 290px;
+  width: 287px;
+  padding-left: 14px;
+  height: 48px;
+  font-size: 18px;
+  border-color: #E5E5E5;
 }
 
 .view-container {
@@ -649,5 +653,10 @@ img {
   font-family: "PT Sans", "Arial", sans-serif;
   color: #333333;
   height: 20px;
+  width: 160px;
+  padding-left: 14px;
+  height: 38px;
+  font-size: 18px;
+  border-color: #E5E5E5;
 }
 
