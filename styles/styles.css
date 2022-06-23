@@ -98,11 +98,16 @@ img {
 }
 
 .navigation-item {
-  margin: 10px 7px;
+  margin: 10px 17px;
 }
 
 .navigation-item a{
-  padding: 10px 7px;
+  padding: 19px 0px;
+}
+
+.navigation-current-link {
+  position: relative;
+  border-bottom: 2px solid #0b0a09;
 }
 
 .menu-list {
