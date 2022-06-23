@@ -609,8 +609,9 @@ img {
 .pagination-container {
   display: flex;
   flex-direction: row;
-  width: 1200px;
+  width: 1055px;
   justify-content: space-between;
+  margin: 0 73px;
 }
 
 .pagination {
@@ -621,15 +622,20 @@ img {
   list-style-type: none;
   width: 500px;
   justify-content: space-between;
+  padding: 0px;
 }
 
 .pagination-link-current{
   background-color: #F2F2F2;
+  padding: 15px 22px;
+  border-radius: 4px;
 }
 
 .pagination-link {
   color: #FFFFFF;
   background-color: #82B3D3;
+  padding: 15px 22px;
+  border-radius: 4px;
 }
 
 .hotels-quantity-container {
