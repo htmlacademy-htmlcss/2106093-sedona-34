@@ -537,6 +537,9 @@ img {
   grid-template-columns: 340px 340px 340px;
   gap: 18px;
   list-style-type: none;
+  border-bottom: 1px solid #E6E6E6;
+  padding-bottom: 66px;
+  margin-bottom: 30px;
 }
 
 .hotel-card-item {
