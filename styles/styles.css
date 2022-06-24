@@ -439,6 +439,7 @@ img {
 .filter-container {
   width: 1060px;
   padding: 35px 70px 70px 70px;
+  margin-bottom: 72px;
   background-color: #a4c9dd;
   background-image: url("../images/backgrounds/background-footer.jpg"); /* Картинку поменять */
   background-size: cover;
@@ -491,21 +492,20 @@ img {
 }
 
 .filter-range {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 60px 70px 1fr;
   width: 520px;
 }
 
 .filter-range-title {
   width: 400px;
-  margin-bottom: 4px;
+  grid-column: 1/3;
 }
 
 .price-controls {
   display: grid;
   grid-template-columns: 1fr auto;
-  margin-bottom: 30px;
 }
 
 .min-price-input {
@@ -538,6 +538,7 @@ img {
 .range-controls {
   width: 285px;
   position: relative;
+  grid-row: 3/4;
 }
 
 .scale {
@@ -575,6 +576,7 @@ img {
   margin-left: auto;
   display: flex;
   flex-direction: column;
+  grid-row: 2/4;
 }
 
 .button-apply {
@@ -602,7 +604,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 50px 72px 57px 72px;
+  margin: 0px 72px 57px 72px;
 }
 
 .hotels-founded {
