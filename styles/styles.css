@@ -650,9 +650,14 @@ img {
   row-gap: 16px;
 }
 
-.hotel-card-link {
+.hotel-card-link-title {
   grid-column: 1/4;
-  grid-row: 1/3;
+  grid-row: 2/3;
+}
+
+.hotel-card-link-image {
+  grid-column: 1/4;
+  grid-row: 1/2;
 }
 
 .hotel-card-image {
