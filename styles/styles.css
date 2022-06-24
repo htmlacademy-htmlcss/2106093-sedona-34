@@ -484,13 +484,63 @@ img {
 }
 
 .filter-range {
-  width: 600px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 520px;
+}
+
+.filter-range-title {
+  width: 400px;
+  margin: 0 0 34px 0;
+}
+
+.price-controls {
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+
+.min-price-input {
+  padding: 10px 20px;
+  background: rgba( 0,0,0,0);
+  border: solid 2px #FFFFFF;
+  color: white;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  width: 143px;
+  border-radius: 4px 0px 0px 4px;
+  box-sizing: border-box;
+}
+
+.max-price-input {
+  padding: 10px 20px;
+  background: rgba( 0,0,0,0);
+  border: solid 2px white;
+  color: white;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  width: 143px;
+  border-left: none;
+  border-radius: 0px 4px 4px 0px;
+  box-sizing: border-box;
+}
+
+.filter-form {
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .button-apply {
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
+  width: 160px;
+  padding: 14px;
+  margin-bottom: 20px;
+  border: none;
 }
 
 .button-reset {
