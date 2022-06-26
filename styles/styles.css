@@ -233,7 +233,7 @@ img {
 }
 
 .advantages-item h3 {
-  margin: 102px 0 30px 0;
+  margin: 22px 0 30px 0;
 }
 
 .advantages-item p {
@@ -277,6 +277,23 @@ img {
   margin: 0px;
 }
 
+.advantages-city-list .advantages-item{
+  background-repeat: no-repeat;
+  background-position: center 80px;
+  background-size: 75px 72px;
+}
+
+.advantages-city-list .advantages-item:nth-child(1) {
+  background-image: url("../images/index/housing.svg");
+}
+
+.advantages-city-list .advantages-item:nth-child(2) {
+  background-image: url("../images/index/food.svg");
+}
+
+.advantages-city-list .advantages-item:nth-child(3) {
+  background-image: url("../images/index/souvenirs.svg");
+}
 
 .main-index h3 {
   font-size: 24px;
