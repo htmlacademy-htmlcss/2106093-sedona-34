@@ -118,6 +118,7 @@ img {
   display: flex;
   padding-right: 70px;
   width: 265px;
+  align-items: center;
 }
 
 .search-item{
@@ -126,6 +127,23 @@ img {
 
 .favorites-item{
   width: 42px;
+  position: relative;
+}
+
+.navigation-icon {
+  padding: 20px 12px;
+}
+
+.quantity-favorites {
+  background-color: #7DB54F;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  border-radius: 10px;
+  color: white;
+  top: -25px;
+  left: 24px;
+  line-height: 18px;
 }
 
 .want-here {
