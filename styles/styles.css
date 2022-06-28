@@ -539,6 +539,31 @@ img {
   padding: 0;
 }
 
+.filter-item {
+  position: relative;
+}
+
+.filter-item:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.filter-item.label {
+  position: relative;
+}
+
+input[type=checkbox] {
+	visibility: hidden;
+}
+
+.control-input::before {
+  visibility: visible;
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  position: absolute;
+}
+
 .filter-content h2{
   margin: 0 0 30px 0;
 }
