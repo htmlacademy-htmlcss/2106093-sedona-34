@@ -504,12 +504,29 @@ img {
 
 .catalog-navigation-list {
   font-size: 16px;
-  width: 120px;
   display: flex;
   list-style-type: none;
   padding: 0;
-  justify-content: space-between;
-  margin: 0 0 40px;
+  margin: 0 0 40px 6px;
+}
+
+.catalog-navigation-item {
+  position: relative;
+}
+
+.catalog-navigation-item:not(:last-child) {
+  margin-right: 25px;
+}
+
+.catalog-navigation-item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  background-image: url("../images/filter/arrow.svg");
+  width: 6px;
+  height: 10px;
+  background-repeat: no-repeat;
+  top: 7px;
+  margin-left: 10px;
 }
 
 .filter-content h2 {
