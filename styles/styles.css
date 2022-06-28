@@ -448,13 +448,13 @@ img {
   width: 240px;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   list-style-type: none;
   padding: 0;
 }
 
-.social-tem {
-  width: 24px;
+.social-item {
+  padding: 15px 13px;
 }
 
 .phone {
