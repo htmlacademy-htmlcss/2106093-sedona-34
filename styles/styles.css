@@ -451,10 +451,25 @@ img {
   justify-content: center;
   list-style-type: none;
   padding: 0;
+  color: #83B3D3;
 }
 
 .social-item {
   padding: 15px 13px;
+}
+
+.social-icon:focus {
+  outline: none;
+}
+
+.social-item:hover,
+.social-item:focus {
+color: #68A2CA;
+}
+
+.social-item:active {
+  color: #68A2CA;
+  opacity: 0.3;
 }
 
 .phone {
@@ -464,9 +479,34 @@ img {
   width: 720px;
 }
 
+.phone:hover,
+.phone:focus {
+  color: #756157;
+  outline: none;
+}
+
+.phone:active {
+  color: #756157;
+  opacity: 0.3;
+}
+
 .authors {
   width: 240px;
   text-align: center;
+}
+
+.authors a:hover {
+  color: #756157;
+}
+
+.authors-link-icon:focus {
+  outline: none;
+  color: #756157;
+}
+
+.authors:active {
+  color: #756157;
+  opacity: 0.3;
 }
 
 /* Catalog form */
@@ -555,7 +595,7 @@ input[type=checkbox] {
 	visibility: hidden;
 }
 
-.control-input::before {
+.control-input-checkbox::before {
   visibility: visible;
   content: "";
   width: 20px;
