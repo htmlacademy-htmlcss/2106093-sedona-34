@@ -105,6 +105,17 @@ img {
   padding: 19px 0px;
 }
 
+.navigation-item:hover,
+.navigation-item:focus {
+  color: #756157;
+  outline: none;
+}
+
+.navigation-item:active {
+  color: #756157;
+  opacity: 0.3;
+}
+
 .navigation-current-link {
   position: relative;
   border-bottom: 2px solid #0b0a09;
@@ -175,8 +186,45 @@ img {
   background: #756157;
 }
 
+.button-dark:hover,
+.button-dark:focus {
+  background: #615048;
+  outline: none;
+}
+
+.button-dark:active {
+  background: #756157;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .button-light {
   background: #82B3D3;
+}
+
+.button-light:hover,
+.button-light:focus {
+  background: #68A2CA;
+  outline: none;
+}
+
+.button-light:active {
+  background: #82B3D3;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button-in-favorite {
+  background: #7DB54F;
+}
+
+.button-in-favorite:hover,
+.button-in-favorite:focus {
+  background: #6C9E42;
+  outline: none;
+}
+
+.button-in-favorite:active {
+  background: #7DB54F;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 /* Main */
@@ -548,6 +596,10 @@ color: #68A2CA;
   list-style-type: none;
   padding: 0;
   margin: 0 0 40px 6px;
+}
+
+.index-icon {
+  padding-top: 5px;
 }
 
 .catalog-navigation-item {
