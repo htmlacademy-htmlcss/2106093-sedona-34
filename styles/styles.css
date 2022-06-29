@@ -222,6 +222,10 @@ img {
   outline: none;
 }
 
+.button-apply:focus {
+  outline: solid 2px #ffffff;
+}
+
 .button-in-favorite:active {
   background: #7DB54F;
   color: rgba(255, 255, 255, 0.3);
