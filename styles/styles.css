@@ -913,7 +913,6 @@ input[type=checkbox] {
 
 .hotel-card-stars{
   grid-column: 1/2;
-  padding: 9px 0;
 }
 
 .rating-text {
