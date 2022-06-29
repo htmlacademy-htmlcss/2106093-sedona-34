@@ -621,6 +621,14 @@ color: #68A2CA;
   margin-left: 10px;
 }
 
+.catalog-navigation-item:hover {
+  opacity: 0.6;
+}
+
+.catalog-navigation-item:active {
+  opacity: 0.3;
+}
+
 .filter-content h2 {
   font-size: 20px;
   line-height: 26px;
@@ -765,6 +773,14 @@ input[type=checkbox] {
   color:#FFFFFF;
   background-color:transparent;
   border: none;
+}
+
+.button-reset:hover {
+  opacity: 0.6;
+}
+
+.button-reset:active {
+  opacity: 0.3;
 }
 
 /* Section hotels-founded */
