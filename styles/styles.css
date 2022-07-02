@@ -260,10 +260,6 @@ img {
   outline: none;
 }
 
-.button-apply:focus {
-  outline: solid 2px #ffffff;
-}
-
 .button-in-favorite:active {
   background: #7DB54F;
   color: rgba(255, 255, 255, 0.3);
@@ -735,22 +731,70 @@ img {
   margin-bottom: 15px;
 }
 
-.filter-item.label {
+.control {
   position: relative;
+  display: block;
 }
 
 input[type=checkbox] {
 	visibility: hidden;
 }
 
-.control-input-checkbox::before {
-  visibility: visible;
+.control-label {
+  padding-left: 19px;
+}
+
+.control-mark::before {
   content: "";
   width: 20px;
   height: 20px;
-  background-color: white;
+  background-color: #FFFFFF;
   position: absolute;
+  top: 1px;
+  left: 0;
+  border-radius: 4px;
 }
+
+.control:hover .control-mark {
+  opacity: 0.6;
+}
+
+.control:focus .control-mark:before {
+  outline: solid 3px #83B3D3;
+
+}
+
+.control:active .control-mark {
+  opacity: 0.3;
+}
+
+.control-input-checkbox:checked + .control-mark::before {
+  content: "";
+  background-image: url("../images/filter/check.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+input[type=radio] {
+	visibility: hidden;
+}
+
+.control-input-radio + .control-mark::before {
+  content: "";
+  border-radius: 50%;
+}
+
+.control-input-radio:checked + .control-mark::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 5px;
+  width: 10px;
+  height: 10px;
+  background-color: #3F5E72;
+  border-radius: 50%;
+}
+
 
 .filter-content h2{
   margin: 0 0 30px 0;
@@ -852,6 +896,10 @@ input[type=checkbox] {
   padding: 14px;
   margin-bottom: 20px;
   border: none;
+}
+
+.button-apply:focus {
+  outline: solid 3px #ffffff;
 }
 
 .button-reset {
