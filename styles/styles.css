@@ -132,13 +132,42 @@ img {
   align-items: center;
 }
 
-.search-item{
+.search-item {
   width: 42px;
+  color: #000000;
+}
+
+.search-item:hover {
+  color: #756157;
+}
+
+.search-item:focus {
+  outline: none;
+  color: #756157;
+}
+
+.search-item:active {
+  color: #756157;
+  opacity: 0.3;
 }
 
 .favorites-item{
   width: 42px;
   position: relative;
+}
+
+.favorites-item:hover {
+  color: #756157;
+}
+
+.favorites-item:focus {
+  outline: none;
+  color: #756157;
+}
+
+.favorites-item:active {
+  color: #756157;
+  opacity: 0.3;
 }
 
 .navigation-icon {
