@@ -88,6 +88,15 @@ img {
   z-index: 1;
 }
 
+.header-logo:hover,
+.header-logo:focus {
+  opacity: 0.6;
+}
+
+.header-logo:active {
+  opacity: 0.3;
+}
+
 .navigation-list {
   display: flex;
   flex-wrap: wrap;
@@ -530,6 +539,7 @@ img {
   padding: 20px 40px;
   border-radius: 0 10px 10px 0;
   border: none;
+  cursor: pointer;
 }
 
 .form-with-background {
