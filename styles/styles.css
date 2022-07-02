@@ -628,7 +628,7 @@ img {
 
 .filter-container {
   width: 1060px;
-  padding: 35px 70px 70px 70px;
+  padding: 35px 70px 43px 70px;
   margin-bottom: 72px;
   background-color: #a4c9dd;
   background-image: url("../images/backgrounds/filter-background.jpg"); /* Картинку поменять */
@@ -638,10 +638,6 @@ img {
 
 .filter-content {
   color: #FFFFFF;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  box-sizing: border-box;
 }
 
 .main-catalog h1 {
@@ -655,6 +651,31 @@ img {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+}
+
+.catalog-filter {
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog-filter-group {
+  border: none;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.catalog-filter-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.filter-buttons {
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
 }
 
 .catalog-navigation-list {
