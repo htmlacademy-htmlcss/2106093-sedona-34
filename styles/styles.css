@@ -795,7 +795,6 @@ input[type=radio] {
   border-radius: 50%;
 }
 
-
 .filter-content h2{
   margin: 0 0 30px 0;
 }
@@ -844,6 +843,43 @@ input[type=radio] {
   box-sizing: border-box;
 }
 
+.min-price:hover,
+.max-price:hover {
+  opacity: 0.6;
+}
+
+.min-price:focus {
+  outline: solid 2px #81B3D2;
+  border-radius: 4px;
+}
+
+.min-price:focus .min-price-input {
+  outline: solid 2px #81B3D2;
+  outline-offset: -4px;
+}
+
+.max-price:focus {
+  outline: solid 2px #81B3D2;
+  border-radius: 4px;
+}
+
+.max-price:focus .min-price-input {
+  outline: solid 2px #81B3D2;
+  outline-offset: -4px;
+}
+
+.min-price:focus-within,
+.min-price:focus-visible {
+  background-color: #756257;
+  outline: none;
+}
+
+.max-price:focus-within,
+.max-price:focus-visible {
+  background-color: #756257;
+  outline: none;
+}
+
 .range-controls {
   width: 285px;
   position: relative;
@@ -871,6 +907,14 @@ input[type=radio] {
   background: #ffffff;
   border-radius: 5px;
   cursor: pointer;
+}
+
+.range-toggle:focus {
+  outline: solid 3px #81B3D2;
+}
+
+.range-toggle:active {
+  outline: solid 2px #81B3D2;
 }
 
 .range-toggle-min {
@@ -913,6 +957,10 @@ input[type=radio] {
 
 .button-reset:hover {
   opacity: 0.6;
+}
+
+.button-reset:focus {
+  outline: solid 3px #81B3D2;
 }
 
 .button-reset:active {
