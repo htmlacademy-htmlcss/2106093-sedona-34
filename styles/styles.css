@@ -105,13 +105,13 @@ img {
   padding: 19px 0px;
 }
 
-.navigation-item:hover,
-.navigation-item:focus {
+.navigation-item a:hover,
+.navigation-item a:focus {
   color: #756157;
   outline: none;
 }
 
-.navigation-item:active {
+.navigation-item a:active {
   color: #756157;
   opacity: 0.3;
 }
@@ -511,6 +511,10 @@ img {
   margin: 0 auto;
 }
 
+.email-form input:focus-visible {
+  outline: inset 2px #000000;
+}
+
 .email-form input{
   padding: 20px 20px;
   width: 560px;
@@ -562,13 +566,10 @@ img {
   padding: 15px 13px;
 }
 
-.social-icon:focus {
-  outline: none;
-}
-
 .social-item:hover,
 .social-item:focus {
-color: #68A2CA;
+  color: #68A2CA;
+  outline: none;
 }
 
 .social-item:active {
@@ -583,13 +584,13 @@ color: #68A2CA;
   width: 720px;
 }
 
-.phone:hover,
-.phone:focus {
+.phone a:hover,
+.phone a:focus {
   color: #756157;
   outline: none;
 }
 
-.phone:active {
+.phone a:active {
   color: #756157;
   opacity: 0.3;
 }
@@ -603,12 +604,12 @@ color: #68A2CA;
   color: #756157;
 }
 
-.authors-link-icon:focus {
+.authors a:focus {
   outline: none;
   color: #756157;
 }
 
-.authors:active {
+.authors a:active {
   color: #756157;
   opacity: 0.3;
 }
