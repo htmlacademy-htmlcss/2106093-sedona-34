@@ -171,7 +171,46 @@
           </section>
         </div>
       </footer>
-      <!-- Позже сдесь будет модальное окно -->
+      <div class="modal-container">
+        <div class="modal modal-hotel-search">
+          <button class="modal-close-button">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+          <section class="modal-content">
+            <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+            <form class="hotel-form" action="https://echo.htmlacademy.ru/" method="post">
+              <div class="date-container">
+                <label for="date-in">Дата заезда:</label>
+                <div class="date-comment-container">
+                  <input class="date-input" name="date-in" id="date_in" type="date" value="2020-04-27">
+                  <p class="comment error">Мы не можем отправить вас в прошлое.</p>
+                </div>
+              </div>
+              <div class="date-container">
+                <label for="date-out">Дата выезда:</label>
+                <div class="date-comment-container">
+                  <input class="date-input" name="date-out" id="date_out" type="date" value="2021-09-01">
+                  <p class="comment">На эти даты есть свободные номера. Пока есть.</p>
+                </div>
+              </div>
+              <div class="people-container">
+                <div class="adult-container">
+                  <label for="adult">Взрослые:</label>
+                  <input class="numbers-input" name="adult" id="adult" min="1" type="number" value="2">
+                </div>
+                <div class="children-container">
+                  <label for="childrens">Дети:</label>
+                  <div class="tooltip">
+                    <span class="tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                  </div>
+                  <input class="numbers-input" name="childrens" id="childrens" min="0" type="number" value="1">
+                </div>
+              </div>
+              <button class="button button-light search-hotel-button" type="submit">Найти</button>
+            </form>
+          </section>
+        </div>
+      </div>
     </div>
   </body>
 </html>
