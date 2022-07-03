@@ -1305,8 +1305,8 @@ input[type=radio] {
 .tooltip::after {
   content: "";
   position: absolute;
-  top: 11px;
-  right: -10px;
+  top: -24px;
+  right: -30px;
   width: 25px;
   height: 25px;
   background-color: #83B3D3;
@@ -1317,16 +1317,26 @@ input[type=radio] {
 }
 
 .tooltip-text {
-  visibility: hidden;
-  width: 215px;
+  /* visibility: hidden; */
+  width: 220px;
+  font-size: 16px;
+  font-weight: 400;
   background-color: #333333;
   color: #ffffff;
-  padding: 15px 18px 18px 18px;
+  padding: 16px 16px 18px 16px;
   border-radius: 6px;
   position: absolute;
-  top: 100%;
-  left: -36px;
-  margin-left: -100px;
+  top: 20px;
+  right: -145px;
+}
+
+.tooltip-text::after {
+  content: "";
+  position: absolute;
+  top: -35px;
+  left: 103px;
+  border: 20px solid transparent;
+  border-bottom: 20px solid #333333;
 }
 
 .tooltip:hover .tooltip-text {
