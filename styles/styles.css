@@ -1014,9 +1014,15 @@ img {
   background-position: right 18px center;
 }
 
+.select-control:hover,
+.select-control:focus,
 .select-control:focus-visible {
-  border: solid 2px #68A2CA;
+  border: solid 2px #83B3D3;
   outline: none;
+}
+
+.select-control:active {
+  opacity: 0.6;
 }
 
 .view-container {
@@ -1155,6 +1161,10 @@ img {
   background-color: #68A2CA;
 }
 
+.pagination-link:focus-visible {
+  outline: none;
+}
+
 .pagination-link:active:not(.pagination-link-current) {
   opacity: 0.25;
 }
@@ -1181,6 +1191,17 @@ img {
   background-image: url("../images/icons/select-arrow.svg");
   background-repeat: no-repeat;
   background-position: right 18px center;
+}
+
+.quantity-hotels:hover,
+.quantity-hotels:focus,
+.quantity-hotels:focus-visible {
+  border: solid 2px #83B3D3;
+  outline: none;
+}
+
+.quantity-hotels:active {
+  opacity: 0.6;
 }
 
 /* Модальное окно */
