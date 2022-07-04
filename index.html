@@ -182,21 +182,25 @@
               <div class="date-container">
                 <label for="date-in">Дата заезда:</label>
                 <div class="date-comment-container">
-                  <input class="date-input" name="date-in" id="date_in" type="date" value="2020-04-27">
+                  <input class="date-input" name="date-in" id="date_in" type="text" value="27 апреля 2020" placeholder="Укажите дату">
                   <p class="comment error">Мы не можем отправить вас в прошлое.</p>
                 </div>
               </div>
               <div class="date-container">
                 <label for="date-out">Дата выезда:</label>
                 <div class="date-comment-container">
-                  <input class="date-input" name="date-out" id="date_out" type="date" value="2021-09-01">
+                  <input class="date-input" name="date-out" id="date_out" type="text" value="1 сентября 2021" placeholder="Укажите дату">
                   <p class="comment">На эти даты есть свободные номера. Пока есть.</p>
                 </div>
               </div>
               <div class="people-container">
                 <div class="adult-container">
                   <label for="adult">Взрослые:</label>
-                  <input class="numbers-input" name="adult" id="adult" min="1" type="number" value="2">
+                  <div class="input-number-container">
+                    <button class="minus-button" ><span class="visually-hidden">Минус.</span></button>
+                    <input class="numbers-input" name="adult" id="adult" min="1" type="number" value="2">
+                    <button class="plus-button" type="button"><span class="pluss-button visually-hidden">Плюс.</span></button>
+                  </div>
                 </div>
                 <div class="children-container">
                   <label for="childrens">Дети:
@@ -204,10 +208,14 @@
                       <span class="tooltip-text">Укажите количество детей, которые будут с&nbsp;вами, возраст которых от&nbsp;6 до&nbsp;18 лет. Дети до&nbsp;6 лет размещаются бесплатно.</span>
                     </div>
                   </label>
-                  <input class="numbers-input" name="childrens" id="childrens" min="0" type="number" value="1">
+                  <div class="input-number-container">
+                    <button class="minus-button" type="button"><span class="visually-hidden">Минус.</span></button>
+                    <input class="numbers-input" name="childrens" id="childrens" min="0" type="number" value="1">
+                    <button class="plus-button" type="button"><span class="pluss-button visually-hidden">Плюс.</span></button>
+                  </div>
                 </div>
               </div>
-              <button class="button button-light search-hotel-button" type="submit">Найти</button>
+              <button class="button button-light hotel-search-modal-button" type="submit">Найти</button>
             </form>
           </section>
         </div>

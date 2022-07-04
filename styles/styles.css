@@ -466,6 +466,10 @@ img {
   font-size: 20px;
 }
 
+.hotel-search-button:focus {
+  outline: solid 3px #82B3D3;
+}
+
 .container-illustration-background {
   background: #82B3D3;
   color: #FFFFFF;
@@ -1270,6 +1274,20 @@ img {
   transform: rotate(-45deg);
 }
 
+.modal-close-button:hover {
+  background-color: #E6E6E6;
+}
+
+.modal-close-button:focus {
+  outline: solid 3px #83B3D3;
+}
+
+.modal-close-button:active {
+  outline: solid 1px #000000;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  background-color: #E6E6E6;
+}
+
 .modal-title {
   margin: 0;
   margin-bottom: 63px;
@@ -1303,7 +1321,7 @@ img {
   justify-content: space-between;
 }
 
-.search-hotel-button {
+.hotel-search-modal-button {
   width: 575px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 16px;
@@ -1313,8 +1331,8 @@ img {
   border: none;
 }
 
-.search-hotel-button:focus {
-  outline: solid 3px #ffffff;
+.hotel-search-modal-button:focus {
+  outline: solid 3px #756257;
 }
 
 .hotel-form label {
@@ -1349,6 +1367,20 @@ img {
   font-size: 18px;
 }
 
+.date-input:hover {
+  background-color: #E6E6E6;
+}
+
+.date-input:focus-visible {
+  background-color: #E6E6E6;
+  outline: solid 3px #83B3D3;
+}
+
+.date-input:active {
+  background-color: #FFFFFF;
+  outline: solid 2px #000000;
+}
+
 .date-comment-container {
   position: relative;
 }
@@ -1362,6 +1394,7 @@ img {
   height: 15px;
   top: 18px;
   right: 20px;
+  opacity: 0.6;
 }
 
 .numbers-input {
@@ -1437,6 +1470,25 @@ img {
   content: "";
 }
 
+.minus-button:hover,
+.plus-button:hover {
+  color: #000000;
+}
+
+.minus-button:focus,
+.plus-button:focus {
+  color: #000000;
+  outline: solid 3px #83B3D3;
+  border-radius: 4px;
+}
+
+.minus-button:active,
+.plus-button:active {
+  opacity: 0.1;
+  outline: none;
+}
+
+
 .tooltip {
   position: relative;
 }
@@ -1453,6 +1505,10 @@ img {
   background-image: url("../images/icons/info.svg");
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.tooltip:hover .tooltip::after {
+  background-color: #68A2CA;
 }
 
 .tooltip-text {
@@ -1485,3 +1541,4 @@ img {
 .tooltip:hover .tooltip-text {
   display: block;
 }
+
