@@ -88,6 +88,10 @@ img {
   z-index: 1;
 }
 
+.header-logo {
+  outline: none;
+}
+
 .header-logo:hover,
 .header-logo:focus {
   opacity: 0.6;
@@ -705,8 +709,12 @@ img {
   margin-left: 10px;
 }
 
-.catalog-navigation-item:hover {
+.catalog-navigation-item:hover,
+.catalog-navigation-item:focus,
+.catalog-navigation-item:focus-visible,
+.catalog-navigation-item a:focus-within{
   opacity: 0.6;
+  outline: none;
 }
 
 .catalog-navigation-item:active {
@@ -736,12 +744,8 @@ img {
   display: block;
 }
 
-input[type=checkbox] {
-	visibility: hidden;
-}
-
 .control-label {
-  padding-left: 19px;
+  padding-left: 39px;
 }
 
 .control-mark::before {
@@ -759,9 +763,10 @@ input[type=checkbox] {
   opacity: 0.6;
 }
 
-.control:focus .control-mark:before {
-  outline: solid 3px #83B3D3;
-
+.control:focus-within .control-mark::before,
+.control:focus-within .control-input:checked + .control-mark::before {
+  opacity: 0.6;
+  outline: 3px solid #83B3D3;
 }
 
 .control:active .control-mark {
@@ -773,10 +778,6 @@ input[type=checkbox] {
   background-image: url("../images/filter/check.svg");
   background-repeat: no-repeat;
   background-position: center;
-}
-
-input[type=radio] {
-	visibility: hidden;
 }
 
 .control-input-radio + .control-mark::before {
@@ -817,10 +818,11 @@ input[type=radio] {
 }
 
 .min-price-input {
-  padding: 10px 20px;
+  padding: 10px 30px 10px 20px;
   background: rgba( 0,0,0,0);
   border: solid 2px #FFFFFF;
-  color: white;
+  border-right: solid 1px #FFFFFF;
+  color: #FFFFFF;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -830,30 +832,79 @@ input[type=radio] {
 }
 
 .max-price-input {
-  padding: 10px 20px;
+  padding: 10px 30px 10px 20px;
   background: rgba( 0,0,0,0);
   border: solid 2px white;
-  color: white;
+  border-left: solid 1px #FFFFFF;
+  color: #FFFFFF;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 21px;
   width: 143px;
-  border-left: none;
   border-radius: 0px 4px 4px 0px;
   box-sizing: border-box;
 }
 
-.min-price:hover,
+.min-price,
+.max-price {
+  position: relative;
+}
+
+.min-price::before {
+  content: "от";
+  position: absolute;
+  width: 21px;
+  height: 21px;
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 21px;
+  opacity: 0.3;
+  top: 12px;
+  left: 80%;
+}
+
+.max-price::before {
+  content: "до";
+  position: absolute;
+  width: 21px;
+  height: 21px;
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 21px;
+  opacity: 0.3;
+  top: 12px;
+  left: 80%;
+}
+
+.min-price-input:hover,
+.max-price-input:hover {
+ border-color: rgba( 255,255,255,0.6);
+}
+
+.min-price-input:focus,
+.max-price-input:focus {
+  box-shadow:
+  0 0 0 3px #81b3d2,
+  inset 0 0 0 3px #81b3d2;
+  outline: none;
+}
+
+.min-price:active,
+.max-price:active {
+  background-color: #756257;
+}
+
+/* .min-price:hover,
 .max-price:hover {
   opacity: 0.6;
 }
 
-.min-price:focus {
+.min-price-input:focus {
   outline: solid 2px #81B3D2;
   border-radius: 4px;
 }
 
-.min-price:focus .min-price-input {
+.min-price-input:focus {
   outline: solid 2px #81B3D2;
   outline-offset: -4px;
 }
@@ -878,7 +929,7 @@ input[type=radio] {
 .max-price:focus-visible {
   background-color: #756257;
   outline: none;
-}
+} */
 
 .range-controls {
   width: 285px;
