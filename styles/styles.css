@@ -1379,28 +1379,32 @@ img {
 }
 
 .tooltip-text {
-  /* visibility: hidden; */
-  width: 220px;
+  display: none;
+  box-sizing: border-box;
+  position: absolute;
+  min-width: 250px;
   font-size: 16px;
   font-weight: 400;
+  line-height: 21px;
   background-color: #333333;
   color: #ffffff;
-  padding: 16px 16px 18px 16px;
+  padding: 14px 16px 18px 16px;
   border-radius: 6px;
-  position: absolute;
-  top: 20px;
-  right: -145px;
+  top: 15px;
+  right: -18px;
+  transform: translate(50%, 0);
 }
 
 .tooltip-text::after {
   content: "";
   position: absolute;
-  top: -35px;
-  left: 103px;
+  top: -30px;
+  left: 50%;
   border: 20px solid transparent;
   border-bottom: 20px solid #333333;
+  transform: translate(-50%, 0);
 }
 
 .tooltip:hover .tooltip-text {
-  visibility: visible;
+  display: block;
 }
