@@ -1059,21 +1059,22 @@ img {
 
 .hotel-card-item {
   padding: 20px;
-  display: grid;
-  grid-template-columns: 140px 20px 140px;
-  grid-template-rows: 211px 28px 21px 37px 37px;
-  row-gap: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 300px;
 }
 
 .hotel-card-link-title {
-  grid-column: 1/4;
-  grid-row: 2/3;
+  width: 300px;
+  margin-bottom: 16px;
 }
 
 
 .hotel-card-link-image {
-  grid-column: 1/4;
-  grid-row: 1/2;
+ width: 300px;
+ order: -1;
+ margin-bottom: 16px;
 }
 
 .hotel-card-link-title:focus-visible,
@@ -1081,35 +1082,29 @@ img {
  outline: solid 4px #81B3D2;
 }
 
-.hotel-card-image {
-  margin-bottom: 16px;
-}
-
 .hotels-catalog h3 {
   font-size: 24px;
   line-height: 28px;
-  margin:0
+  margin:0;
 }
 
 .hotel-card-item span {
   color: #333333;
+  margin-bottom: 16px;
 }
 
 .hotel-text {
-  grid-column: 1/2;
+  width: 133px;
 }
 
 .hotel-price {
-  grid-column: 3/4;
+  width: 143px;
 }
 
 .hotel-card-button {
-  padding: 9px 15px;
-  grid-column: 1/2;
-}
-
-.button-light {
-  grid-column: 3/4;
+  width: 140px;
+  margin-bottom: 16px;
+  padding: 9px 0;
 }
 
 .hotel-rating {
@@ -1431,7 +1426,7 @@ img {
   z-index: 1;
   width: 13px;
   height: 13px;
-  top: 50%;
+  top: 25px;
   left: 20px;
   transform: translate(0, -50%);
   cursor: pointer;
@@ -1443,7 +1438,7 @@ img {
   z-index: 1;
   width: 13px;
   height: 13px;
-  top: 50%;
+  top: 25px;
   right: 20px;
   transform: translate(0, -50%);
   cursor: pointer;
