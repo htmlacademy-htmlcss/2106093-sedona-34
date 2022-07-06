@@ -38,6 +38,7 @@ body {
   background-color: #E5E5E5;
   margin: 0;
   min-height: 100%;
+  min-width: 1200px;
 }
 
 a {
@@ -194,6 +195,7 @@ img {
   top: -25px;
   left: 24px;
   line-height: 18px;
+  overflow: hidden;
 }
 
 .want-here {
@@ -219,6 +221,7 @@ img {
   align-items: center;
   text-align: center;
   border-radius: 4px;
+  display: block;
 }
 
 .button-dark {
@@ -308,7 +311,7 @@ img {
 
 .mask {
   position: relative;
-  bottom: -21px;
+  bottom: -22px;
 }
 
 .main-index h2 {
@@ -356,7 +359,6 @@ img {
 
 .container-illustration-background {
   display: flex;
-  max-height: 384px;
   align-items: center;
 }
 
@@ -366,7 +368,7 @@ img {
 
 .item-text {
   width: 400px;
-  padding: 0 80px;
+  padding: 20px 80px 0 80px;
   box-sizing: border-box;
 }
 
@@ -438,29 +440,31 @@ img {
 }
 
 .interesting {
-  height: 417px;
+  padding: 90px 300px 36px 300px
 }
 
 .interesting h2{
-  padding-top: 91px;
-  padding-bottom: 29px;
-  margin: 0;
+  margin: 0 0 29px 0;
 }
 
 .interesting p {
   font-size: 22px;
   line-height: 26px;
   color: #333333;
-  margin: 0px;
-  padding-bottom: 76px;
+  margin-bottom: 56px;
 }
 
 .hotel-search-button {
-  box-sizing:border-box;
-  margin:0;
-  padding: 20px 150px;
+  box-sizing: border-box;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 12px 20px;
   line-height: 36px;
   font-size: 20px;
+  max-width: 574px;
+  min-width: 574px;
+  margin-bottom: 60px;
 }
 
 .hotel-search-button:focus {
@@ -489,7 +493,7 @@ img {
 
 .subscribe-form {
   text-align: center;
-  min-height: 411px;
+  padding: 94px 200px;
 }
 
 .subscribe-form h3 {
@@ -499,8 +503,7 @@ img {
   margin: 0;
 }
 
-.subscribe-form h3{
-  margin-top: 94px;
+.subscribe-form h3 {
   margin-bottom: 29px;
 }
 
@@ -510,7 +513,7 @@ img {
   color: #333333;
   margin-top: 0;
   margin-bottom: 46px;
-  padding: 0 330px;
+  padding: 0 150px;
 }
 
 .email-form {
@@ -519,6 +522,10 @@ img {
   width: 800px;
   box-sizing: border-box;
   margin: 0 auto;
+}
+
+.user-email-label {
+  display: flex;
 }
 
 .email-form input:focus-visible {
@@ -553,7 +560,6 @@ img {
   background: #82B3D3;
   background-image: url("../images/backgrounds/background-footer.jpg");
   background-size: 100% auto;
-  background-repeat: no-repeat;
 }
 
 .form-with-background p {
@@ -960,6 +966,7 @@ img {
   padding: 14px;
   margin-bottom: 20px;
   border: none;
+  align-self: center;
 }
 
 .button-apply:focus {
@@ -1010,6 +1017,7 @@ img {
   line-height: 21px;
   width: 287px;
   padding-left: 14px;
+  padding-right: 40px;
   height: 48px;
   border-width: 2px;
   border-color: #E5E5E5;
@@ -1186,9 +1194,9 @@ img {
 .quantity-hotels {
   font-family: "PT Sans", "Arial", sans-serif;
   color: #333333;
-  height: 20px;
   width: 160px;
   padding-left: 14px;
+  padding-right: 40px;
   height: 38px;
   font-size: 18px;
   border-color: #E5E5E5;
