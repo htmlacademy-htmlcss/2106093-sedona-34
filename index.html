@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="images/icons/favicon.svg" type="image/svg+xml">
   </head>
   <body>
     <div class="site-container">
@@ -39,7 +39,7 @@
               </a>
             </li>
             <li>
-              <a class="button want-here button-dark" href="catalog.html">хочу сюда!</a>
+              <a class="button want-here button-dark .modal-container-open" href="catalog.html">хочу сюда!</a>
             </li>
           </ul>
         </nav>
@@ -67,12 +67,12 @@
                 </div>
                 <ul class="advantages-city-list">
                   <li class="advantages-item side-block">
-                    <h4>Жилье</h4>
-                    <p>Рекомендуем пожить в&nbsp;настоящем мотеле, всё как в&nbsp;кино!</p>
+                    <h4>Жильё</h4>
+                    <p>Рекомендуем пожить в&nbsp;настоящем мотеле,<br> всё как в&nbsp;кино!</p>
                   </li>
                   <li class="advantages-item">
                     <h4>Еда</h4>
-                    <p>Всегда заказывайте топовый фирменный бургер, вы&nbsp;не&nbsp;разочаруетесь!</p>
+                    <p>Всегда заказывайте<br> топовый фирменный бургер, вы&nbsp;не&nbsp;разочаруетесь!</p>
                   </li>
                   <li class="advantages-item side-block">
                     <h4>Сувениры</h4>
@@ -83,7 +83,7 @@
               <li class="advantages-item-illustration">
                 <div class="container-illustration-background reverse">
                   <div class="item-text">
-                    <h3>Там есть мост дъявола</h3>
+                    <h3>Там есть<br> мост дъявола</h3>
                     <span>— №2 —</span>
                     <p>Да, по&nbsp;нему можно пройти! Если вы осмелитесь, разумеется</p>
                   </div>
@@ -112,16 +112,16 @@
           <section class="interesting">
             <h2>Заинтересовались?</h2>
             <p>Укажите предполагаемые даты поездки,<br> и&nbsp;мы покажем вам лучшие предложения гостиниц в&nbsp;Седоне</p>
-            <a class="button hotel-search-button button-dark" href="#">Поиск гостиницы в Седоне</a>
+            <a class="button hotel-search-button button-dark .modal-container-open" href="#">Поиск гостиницы в Седоне</a>
           </section>
       </main>
       <footer class="footer">
         <div class="footer-container">
           <section class="form-with-background subscribe-form">
-            <h3>Подпишись на рассылку</h3>
+            <h3>Подпишитесь на рассылку</h3>
             <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
             <form class="email-form" action="https://echo.htmlacademy.ru/">
-              <label for="user_email">
+              <label class="user-email-label" for="user_email">
                 <input type="email" name="user-email" id="user_email" placeholder="Ваш e-mail">
             </label>
             <button class="button subscribe-button button-light" type="submit">Подписаться</button>
@@ -180,34 +180,44 @@
             <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
             <form class="hotel-form" action="https://echo.htmlacademy.ru/" method="post">
               <div class="date-container">
-                <label for="date-in">Дата заезда:</label>
+                <label for="date_in">Дата Заезда:</label>
                 <div class="date-comment-container">
-                  <input class="date-input" name="date-in" id="date_in" type="date" value="2020-04-27">
+                  <input class="date-input" name="date-in" id="date_in" type="text" value="27 апреля 2020" placeholder="Укажите дату">
                   <p class="comment error">Мы не можем отправить вас в прошлое.</p>
                 </div>
               </div>
               <div class="date-container">
-                <label for="date-out">Дата выезда:</label>
+                <label for="date_out">Дата Выезда:</label>
                 <div class="date-comment-container">
-                  <input class="date-input" name="date-out" id="date_out" type="date" value="2021-09-01">
+                  <input class="date-input" name="date-out" id="date_out" type="text" value="1 сентября 2021" placeholder="Укажите дату">
                   <p class="comment">На эти даты есть свободные номера. Пока есть.</p>
                 </div>
               </div>
               <div class="people-container">
                 <div class="adult-container">
                   <label for="adult">Взрослые:</label>
-                  <input class="numbers-input" name="adult" id="adult" min="1" type="number" value="2">
+                  <div class="input-number-container">
+                    <button class="minus-button" ><span class="visually-hidden">Минус.</span></button>
+                    <input class="numbers-input" name="adult" id="adult" min="1" type="number" value="2">
+                    <button class="plus-button" type="button"><span class="pluss-button visually-hidden">Плюс.</span></button>
+                  </div>
                 </div>
                 <div class="children-container">
-                  <label for="childrens">Дети:
-                    <div class="tooltip">
-                      <span class="tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
-                    </div>
-                  </label>
-                  <input class="numbers-input" name="childrens" id="childrens" min="0" type="number" value="1">
+                  <label for="childrens">Дети:</label>
+                  <div class="tooltip">
+                    <button class="info-button" type="button">
+                      <svg class="info-icon" aria-hidden="true" focusable="false" width="1" height="9" viewBox="0 0 1 9" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)" fill="#fff"><path d="M0 9h1V3H0v6ZM1 0H0v1h1V0Z"></path></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h1v9H0z"></path></clipPath></defs></svg>
+                    </button>
+                    <span class="tooltip-text">Укажите количество детей, которые будут с&nbsp;вами, возраст которых от&nbsp;6 до&nbsp;18 лет. Дети до&nbsp;6 лет размещаются бесплатно.</span>
+                  </div>
+                  <div class="input-number-container">
+                    <button class="minus-button" type="button"><span class="visually-hidden">Минус.</span></button>
+                    <input class="numbers-input" name="childrens" id="childrens" min="0" type="number" value="1">
+                    <button class="plus-button" type="button"><span class="pluss-button visually-hidden">Плюс.</span></button>
+                  </div>
                 </div>
               </div>
-              <button class="button button-light search-hotel-button" type="submit">Найти</button>
+              <button class="button button-light hotel-search-modal-button" type="submit">Найти</button>
             </form>
           </section>
         </div>
