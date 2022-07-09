@@ -695,6 +695,8 @@ img {
 .catalog-filter-group {
   border: none;
   display: flex;
+  flex-wrap: wrap;
+  max-width: 150px;
   flex-direction: column;
   justify-content: space-evenly;
   padding: 0;
@@ -786,6 +788,7 @@ img {
 
 .control-label {
   padding-left: 39px;
+  display: block;
 }
 
 .control-mark::before {
