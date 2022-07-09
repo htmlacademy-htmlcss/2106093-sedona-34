@@ -41,7 +41,7 @@ body {
   min-width: 1200px;
 }
 
-.site-container a {
+a {
   text-decoration: none;
   color: inherit;
 }
@@ -744,7 +744,7 @@ img {
   width: 6px;
   height: 10px;
   background-repeat: no-repeat;
-  top: 7px;
+  top: 6px;
   margin-left: 10px;
 }
 
