@@ -41,7 +41,7 @@ body {
   min-width: 1200px;
 }
 
-.site-container a {
+a {
   text-decoration: none;
   color: inherit;
 }
@@ -489,7 +489,7 @@ img {
 
 .subscribe-form {
   text-align: center;
-  padding: 95px 200px;
+  padding: 97px 200px 90px;
 }
 
 .subscribe-form h3 {
@@ -497,10 +497,13 @@ img {
   line-height: 36px;
   text-transform: uppercase;
   margin: 0;
+  margin-bottom: 29px;
+}
+
+.form-with-background h3 {
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   -webkit-text-stroke: 1px #000000;
   text-stroke: 1px #000000;
-  margin-bottom: 29px;
 }
 
 .subscribe-form p {
@@ -581,7 +584,7 @@ img {
   padding: 0;
   color: #83b3d3;
   flex-wrap: wrap;
-  padding-top: 14px;
+  padding-top: 28px;
 }
 
 .social-media li {
@@ -611,7 +614,7 @@ img {
   line-height: 40px;
   text-align: center;
   width: 720px;
-  padding-top: 10px;
+  padding-top: 22px;
 }
 
 .phone a {
@@ -634,7 +637,7 @@ img {
   width: 170px;
   display: flex;
   flex-direction: column;
-  padding-top: 20px;
+  padding-top: 22px;
   align-items: flex-end;
 }
 
@@ -695,6 +698,8 @@ img {
 .catalog-filter-group {
   border: none;
   display: flex;
+  flex-wrap: wrap;
+  max-width: 150px;
   flex-direction: column;
   justify-content: space-evenly;
   padding: 0;
@@ -744,7 +749,7 @@ img {
   width: 6px;
   height: 10px;
   background-repeat: no-repeat;
-  top: 7px;
+  top: 6px;
   margin-left: 10px;
 }
 
@@ -786,6 +791,7 @@ img {
 
 .control-label {
   padding-left: 39px;
+  display: block;
 }
 
 .control-mark::before {
