@@ -500,12 +500,6 @@ img {
   margin-bottom: 29px;
 }
 
-.form-with-background h3 {
-  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-  -webkit-text-stroke: 1px #000000;
-  text-stroke: 1px #000000;
-}
-
 .subscribe-form p {
   font-size: 22px;
   line-height: 26px;
