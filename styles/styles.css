@@ -41,7 +41,7 @@ body {
   min-width: 1200px;
 }
 
-a {
+.link {
   text-decoration: none;
   color: inherit;
 }
@@ -268,7 +268,7 @@ img {
 }
 
 .view-button {
-  padding: 12px 14px;
+  padding: 11px 14px;
   border: solid 2px #e5e5e5;
   border-radius: 4px;
 }
@@ -313,7 +313,7 @@ img {
 
 .mask {
   position: relative;
-  bottom: -22px;
+  bottom: -21px;
 }
 
 .main-index h2 {
@@ -324,7 +324,7 @@ img {
 }
 
 .five-advantages {
-  margin: 0 273px 90px 273px;
+  margin: 0 auto 90px auto;
   font-size: 22px;
   line-height: 26px;
   color: #333333;
@@ -441,7 +441,7 @@ img {
 }
 
 .interesting {
-  padding: 90px 300px 33px 300px;
+  padding: 90px 302px 33px 300px;
 }
 
 .interesting h2 {
@@ -489,7 +489,7 @@ img {
 
 .subscribe-form {
   text-align: center;
-  padding: 97px 200px 90px;
+  padding: 97px 200px 91px;
 }
 
 .subscribe-form h3 {
@@ -498,12 +498,6 @@ img {
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 29px;
-}
-
-.form-with-background h3 {
-  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-  -webkit-text-stroke: 1px #000000;
-  text-stroke: 1px #000000;
 }
 
 .subscribe-form p {
@@ -543,11 +537,14 @@ img {
 }
 
 .subscribe-button {
-  padding: 20px 38px;
+  padding: 10px 35px;
   border-radius: 0 10px 10px 0;
   border: none;
   cursor: pointer;
   margin-left: -5px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 20px;
+  line-height: 36px;
 }
 
 .subscribe-button:focus {
@@ -584,7 +581,7 @@ img {
   padding: 0;
   color: #83b3d3;
   flex-wrap: wrap;
-  padding-top: 28px;
+  padding-top: 26px;
 }
 
 .social-media li {
@@ -710,7 +707,7 @@ img {
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
   padding: 0;
 }
 
@@ -861,10 +858,11 @@ img {
 .price-controls {
   display: grid;
   grid-template-columns: 1fr auto;
+  margin-top: -6px;
 }
 
 .min-price-input {
-  padding: 10px 30px 10px 18px;
+  padding: 11px 30px 10px 17px;
   background: rgba(0, 0, 0, 0);
   border: solid 2px #ffffff;
   border-right: solid 1px #ffffff;
@@ -878,7 +876,7 @@ img {
 }
 
 .max-price-input {
-  padding: 10px 30px 10px 18px;
+  padding: 11px 30px 10px 16px;
   background: rgba(0, 0, 0, 0);
   border: solid 2px #ffffff;
   border-left: solid 1px #ffffff;
@@ -905,8 +903,8 @@ img {
   font-size: 18px;
   line-height: 21px;
   opacity: 0.3;
-  top: 13px;
-  left: 80%;
+  top: 12px;
+  left: 79%;
 }
 
 .max-price::before {
@@ -1050,7 +1048,7 @@ img {
   font-size: 18px;
   line-height: 21px;
   width: 287px;
-  padding-left: 14px;
+  padding-left: 17px;
   padding-right: 40px;
   height: 48px;
   border-width: 2px;
@@ -1059,7 +1057,7 @@ img {
   appearance: none;
   background-image: url("../images/icons/select-arrow.svg");
   background-repeat: no-repeat;
-  background-position: right 18px center;
+  background-position: right 16px center;
   margin-left: 100px;
 }
 
@@ -1087,11 +1085,11 @@ img {
   display: grid;
   grid-template-columns: 340px 340px 340px;
   column-gap: 18px;
-  row-gap: 13px;
+  row-gap: 7px;
   list-style-type: none;
   border-bottom: 1px solid #e6e6e6;
   padding-bottom: 66px;
-  margin-bottom: 22px;
+  margin-bottom: 12px;
 }
 
 .hotel-card-item {
@@ -1111,7 +1109,7 @@ img {
 .hotel-card-link-image {
   width: 300px;
   order: -1;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
 }
 
 .hotel-card-link-title:focus-visible,
@@ -1127,7 +1125,7 @@ img {
 
 .hotel-card-item span {
   color: #333333;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .hotel-text {
@@ -1140,7 +1138,7 @@ img {
 
 .hotel-card-button {
   width: 140px;
-  margin-bottom: 16px;
+  margin-bottom: 17px;
   padding: 9px 0;
 }
 
@@ -1231,7 +1229,7 @@ img {
   width: 160px;
   padding-left: 20px;
   padding-right: 40px;
-  height: 38px;
+  height: 48px;
   font-size: 18px;
   border-color: #e5e5e5;
   border-radius: 4px;
