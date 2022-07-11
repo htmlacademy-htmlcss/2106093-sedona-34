@@ -313,7 +313,7 @@ img {
 
 .mask {
   position: relative;
-  bottom: -20px;
+  bottom: -21px;
 }
 
 .main-index h2 {
@@ -324,7 +324,7 @@ img {
 }
 
 .five-advantages {
-  margin: 0 273px 90px 273px;
+  margin: 0 auto 90px auto;
   font-size: 22px;
   line-height: 26px;
   color: #333333;
@@ -489,7 +489,7 @@ img {
 
 .subscribe-form {
   text-align: center;
-  padding: 97px 200px 90px;
+  padding: 97px 200px 91px;
 }
 
 .subscribe-form h3 {
